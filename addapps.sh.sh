@@ -313,6 +313,8 @@ dpkg -l | grep -qw sound-juicer ||
 #*	VLC Media Player
 
 #***************************************************************************#
+# Move to category
+#***************************************************************************#
 dpkg -l | grep -qw guvcview || sudo apt-get install -y guvcview      # guvcview
 dpkg -l | grep -qw libguvcview ||
 			sudo apt-get install -y libguvcview                         # libguvcview

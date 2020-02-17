@@ -55,6 +55,53 @@ echo -e "-----------------------------------------------------------------------
 sleep 2
 echo -e ""; clear; echo -e ""														# clear Screen
 
+CLEAN UP ***********
+# Synology
+#  Install Synology Assistant                                                     #
+# Reference the following website(s):
+# https://www.virtono.com/community/tutorial-how-to/installing-synology-assistant-on-ubuntu/
+echo -e "-------------------------------------------------------------------------"
+echo -e " Installing Synology Assistant..."
+echo -e "-------------------------------------------------------------------------"
+echo -e ""
+
+
+# downloading Synology
+echo -e "-------------------------------------------------------------------------"
+echo -e " Downloading Synology Assistant..."
+echo -e "-------------------------------------------------------------------------"
+d /tmp && wget https://global.download.synology.com/download/Tools/Assistant/6.2-23733/Ubuntu/x86_64/synology-assistant_6.2-23733_amd64.deb
+
+
+# echo "Installing Syn Assist and CloudStation Backup"
+
+# wget -O $tmp_dir/synassistant.deb https://global.download.synology.com/download/Tools/Assistant/6.1-15163/Ubuntu/x86_64/synology-assistant_6.1-15163_amd64.deb
+
+# wget -O $tmp_dir/cloudback.deb https://global.download.synology.com/download/Tools/CloudStationBackup/4.2.6-4408/Ubuntu/Installer/x86_64/synology-cloud-station-backup-4408.x86_64.deb
+
+# dpkg -i $tmp_dir/synassistant.deb
+
+# dpkg -i $tmp_dir/cloudback.deb
+
+# apt-get install -f 
+
+
+echo -e "-------------------------------------------------------------------------"
+echo -e "|             Synology Assistant installed                       |"
+echo -e "-------------------------------------------------------------------------"
+
+# Install Synology Assistant
+echo -e "-------------------------------------------------------------------------"
+echo -e " Installing Synology Assistant..."
+echo -e "-------------------------------------------------------------------------"
+sudo dpkg -i synology-assistant_6.2-23733_amd64.deb
+echo -e "-------------------------------------------------------------------------"
+echo -e " Synology Installed "
+echo -e "-------------------------------------------------------------------------"
+sleep 2
+echo -e ""; clear; echo -e ""														# clear Screen
+*********** CLEAN UP
+
 
 #Teamviewer
 # Reference the following website(s):
