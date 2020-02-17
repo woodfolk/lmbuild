@@ -33,33 +33,13 @@ First update/upgrade your system with mintupdate icon at bottom right or by runn
 
 ## Software installation
 
-The installation scripts used to install software will be installed via the terminal.
+The installation scripts used to install software will be run via the terminal.
 
-	0-installmaster.sh										# Master Install Script
-    
-	1-install-core-software-v*.sh							# Core Software and Utilities
-	2-install-extra-software-v*.sh						# 
-	3-install-themes-icons-v*.sh							# Themes and Icons
-	4-install-distro-specific-software.sh				# Linux Mint Software
-
-    0-prep-configurations-v*.sh                 # Pre-Configuration Script
-    1-prep-configurations-v*.sh                 # Pre-Configuration Script
-    
-    1-install-core-utilities-v*.sh              # Core Utilities
-    2-install-av-apps-v*.sh                     # Audio & Video Applications
-    3-install-cin-apps-v*.sh                    # Communications, Internet & Networking
-    4-install-offprod-apps-v*.sh                # Office and Productivity 
-    5-install-graphics-apps-v*.sh               # Graphics and Photography
-    6-install-misc-apps-v*.sh                   # Miscellaneous Applications
-    7-install-ppa-apps-v*.sh                    # Personal Package Archive Installs
-    8-install-themes-icons-v*.sh                # Themes and Icons
-    9-install-snap-packages-v*.sh               # SnapCraft and Snap Packages
-    0-install-interactive-v*.sh                 # Interactive/EULA Installs
-    0-installation-summary-v*-sh                # Summary
-    
-    
-    app-configurations-v1.sh                    # Post-Configuration Script
-
+	lmbuild.sh                         # Main Install Script
+	addrepos.sh                        # Adds PPAs additional repositories
+	addapps.sh                         # Install core use applications
+	custapps.sh                        # Install custom applications
+	
 Do not forget to type "./" in front of the name.
 
 Some of scripts call other scripts in the folder and should be keep together in the same folder.
