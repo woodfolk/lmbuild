@@ -15,10 +15,12 @@ set -e
 echo -e "-------------------------------------------------------------------------"
 echo -e "::Custom Applications::"
 echo -e "-------------------------------------------------------------------------"
-#  Install Google Chrome
-# Reference the following website(s):
+sleep 2
+echo -e ""; clear; echo -e ""														# clear Screen
+
+
+# Google Chrome
 # https://www.linuxbabe.com/ubuntu/install-google-chrome-ubuntu-18-04-lts
-#
 echo -e "-------------------------------------------------------------------------"
 echo -e " Downloading Google Chrome Web Browser..."
 echo -e "-------------------------------------------------------------------------"
@@ -30,6 +32,25 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get install -f
 echo -e "-------------------------------------------------------------------------"
 echo -e " Google Chrome installed                      "
+echo -e "-------------------------------------------------------------------------"
+sleep 2
+echo -e ""; clear; echo -e ""														# clear Screen
+
+
+# Multisystem
+echo -e "-------------------------------------------------------------------------"
+echo -e " Instaling prerequisite for multisystem...                               "
+echo -e "-------------------------------------------------------------------------"
+dpkg -l | grep -qw software-properties-common || 
+			sudo apt-get install -y software-properties-common          # software-properties-common package
+## Install MultiSystem
+echo -e "-------------------------------------------------------------------------"
+echo -e " Installing multisystem...                                         "
+echo -e "-------------------------------------------------------------------------"
+dpkg -l | grep -qw multisystem || 
+			sudo apt-get install -y multisystem                         # multisystem
+echo -e "-------------------------------------------------------------------------"
+echo -e " multisystem Installed "
 echo -e "-------------------------------------------------------------------------"
 sleep 2
 echo -e ""; clear; echo -e ""														# clear Screen
@@ -55,42 +76,35 @@ echo -e "-----------------------------------------------------------------------
 sleep 2
 echo -e ""; clear; echo -e ""														# clear Screen
 
-CLEAN UP ***********
-# Synology
-#  Install Synology Assistant                                                     #
-# Reference the following website(s):
+
+#Slack
+# https://linuxconfig.org/how-to-install-slack-on-ubuntu-18-04-bionic-beaver-linux
+echo -e "-------------------------------------------------------------------------"
+echo -e " Downloading Slack Package                                      "
+echo -e "-------------------------------------------------------------------------"
+cd /tmp && wget -O ~/slack.deb "https://downloads.slack-edge.com/linux_releases/slack-desktop-4.3.2-amd64.deb"
+echo -e "-------------------------------------------------------------------------"
+echo -e " Installing Slack                                               "
+echo -e "-------------------------------------------------------------------------"
+sudo gdebi --n ~/slack.deb
+echo -e "-------------------------------------------------------------------------"
+echo -e " Slack Installed                          "
+echo -e "-------------------------------------------------------------------------"
+sleep 2
+echo -e ""; clear; echo -e ""														# clear Screen
+
+
+# Synology Assistant                                                     
 # https://www.virtono.com/community/tutorial-how-to/installing-synology-assistant-on-ubuntu/
+# https://www.synology.com/en-us/support/download/DS1511+#utilities
+echo -e "-------------------------------------------------------------------------"
+echo -e " Downloading  Synology Assistant..."
+echo -e "-------------------------------------------------------------------------"
+echo -e ""
+cd /tmp && wget https://global.download.synology.com/download/Tools/Assistant/6.2-24922/Ubuntu/x86_64/synology-assistant_6.2-24922_amd64.deb
 echo -e "-------------------------------------------------------------------------"
 echo -e " Installing Synology Assistant..."
 echo -e "-------------------------------------------------------------------------"
-echo -e ""
-
-
-# downloading Synology
-echo -e "-------------------------------------------------------------------------"
-echo -e " Downloading Synology Assistant..."
-echo -e "-------------------------------------------------------------------------"
-d /tmp && wget https://global.download.synology.com/download/Tools/Assistant/6.2-23733/Ubuntu/x86_64/synology-assistant_6.2-23733_amd64.deb
-
-
-# echo "Installing Syn Assist and CloudStation Backup"
-
-# wget -O $tmp_dir/synassistant.deb https://global.download.synology.com/download/Tools/Assistant/6.1-15163/Ubuntu/x86_64/synology-assistant_6.1-15163_amd64.deb
-
-# wget -O $tmp_dir/cloudback.deb https://global.download.synology.com/download/Tools/CloudStationBackup/4.2.6-4408/Ubuntu/Installer/x86_64/synology-cloud-station-backup-4408.x86_64.deb
-
-# dpkg -i $tmp_dir/synassistant.deb
-
-# dpkg -i $tmp_dir/cloudback.deb
-
-# apt-get install -f 
-
-
-echo -e "-------------------------------------------------------------------------"
-echo -e "|             Synology Assistant installed                       |"
-echo -e "-------------------------------------------------------------------------"
-
-# Install Synology Assistant
 echo -e "-------------------------------------------------------------------------"
 echo -e " Installing Synology Assistant..."
 echo -e "-------------------------------------------------------------------------"
@@ -100,7 +114,6 @@ echo -e " Synology Installed "
 echo -e "-------------------------------------------------------------------------"
 sleep 2
 echo -e ""; clear; echo -e ""														# clear Screen
-*********** CLEAN UP
 
 
 #Teamviewer
@@ -150,31 +163,6 @@ echo -e ""; clear; echo -e ""														# clear Screen
 
 
 
-#---------------------------------------------------------------------------------#
-#  Configuring VirtualBox                                                         #
-#---------------------------------------------------------------------------------#
-# Reference the following website(s):
-# https://websiteforstudents.com/installing-virtualbox-5-2-ubuntu-17-04-17-10/
-#
-# Suggested packages:
-# VDE is a virtual switch that can connect multiple virtual machines together,
-# both local and remote VirtualBox Guest Additions ISO guest additions iso image
-# for VirtualBox
-# 
-# Adding users to vboxusers group
-echo -e ""; clear; echo -e ""														# clear Screen
-echo -e "-------------------------------------------------------------------------"
-echo -e "..adding virtualbox users to the vboxusers group..."
-echo -e "-------------------------------------------------------------------------"
-sudo adduser $USER vboxusers
-echo -e ""; clear; echo -e ""													# clear Screen
-
-
-echo -e "-------------------------------------------------------------------------"
-echo -e " Installing XXXXXXXXXX..."
-echo -e "------------------------------------------------------------------"
-
-
 {Code Goes Here}
 echo -e "------------------------------------------------------------------"
 echo -e "|                                                                |"
@@ -183,8 +171,10 @@ dpkg -l | grep -qw xyz || sudo apt-get install -y xyz					# xyz
 cd /tmp && wget -q 
 {Code Goes Here}
 
+sudo apt-get install -f 
+
 
 echo -e "-------------------------------------------------------------------------"
-echo -e "|                                                                |"
+echo -e "::Custom Applications Complete::                                         "
 echo -e "-------------------------------------------------------------------------"
 

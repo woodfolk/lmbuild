@@ -16,6 +16,10 @@ echo -e "------------------------------------------------------------------"
 echo -e "::Utilities and Core Applications::"
 echo -e "------------------------------------------------------------------"
 sudo apt-get install -y \gcc \make linux-headers-$(uname -r) dkms    # gcc
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $ (lsb_release -sc) universe"
+																							# "universe" repository
+dpkg -l | grep -qw software-properties-common || 
+			sudo apt-get install -y software-properties-common          # software-properties-common package
 dpkg -l | grep -qw arj || sudo apt-get install -y arj						# arj
 dpkg -l | grep -qw catfish || sudo apt-get install -y catfish    		# catfish
 dpkg -l | grep -qw curl || sudo apt-get install -y curl				   # curl
@@ -23,7 +27,7 @@ dpkg -l | grep -qw cabextract || sudo apt-get install -y cabextract	# cabextract
 dpkg -l | grep -qw dconf-cli || sudo apt-get install -y dconf-cli		# dconf-cli
 dpkg -l | grep -qw dconf-editor ||
 			sudo apt-get install -y dconf-editor								# dconf-editor
-# dvdisaster
+dpkg -l | grep -qw dvdisaster || sudo apt-get install -y dvdisaster  # dvdisaster
 dpkg -l | grep -qw gdebi || sudo apt-get install -y gdebi				# GDebi Package Installer
 dpkg -l | grep -qw git || sudo apt-get install -y git   					# git
 dpkg -l | grep -qw git-core || sudo apt-get install -y git-core   	# git-core

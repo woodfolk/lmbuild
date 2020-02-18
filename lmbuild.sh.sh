@@ -99,7 +99,7 @@ echo -e "-----------------------------------------------------------------------
 echo -e " Log files created..."
 echo -e "---------------------------------------------------------------------------------"
 sleep 2
-echo -e ""; clear; echo -e ""    										# clear Screen
+echo -e ""; clear; echo -e ""    										     # clear Screen
 
 echo -e "---------------------------------------------------------------------------------"
 echo -e "replacing your .bashrc file with a custom .bashrc file from ParrotSec OS...      "
@@ -114,6 +114,13 @@ echo -e " Updating the repository database..."
 echo -e "---------------------------------------------------------------------------------"
 sudo apt-get update -y && sudo apt-get full-upgrade -y && sudo apt-get dist-upgrade -y &&
 sudo apt-get -f install -y && sudo apt-get autoremove
+echo -e ""; clear; echo -e ""    										# clear Screen
+
+echo -e "---------------------------------------------------------------------------------"
+echo -e " Install Prerequisites                                          "
+echo -e "---------------------------------------------------------------------------------"
+dpkg -l | grep -qw gdebi-core || sudo apt-get install -y gdebi-core 	# gdebi-core
+dpkg -l | grep -qw wget || sudo apt-get install -y wget 					# wget
 echo -e ""; clear; echo -e ""    										# clear Screen
 
 echo -e ""

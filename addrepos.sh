@@ -79,6 +79,18 @@ echo -e "-----------------------------------------------------------------------
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
 
 
+# Multisystem
+echo -e "-------------------------------------------------------------------------"
+echo -e " Add the MultiSystem repository..."
+echo -e "-------------------------------------------------------------------------"
+sudo apt-add-repository 'deb http://liveusb.info/multisystem/depot all main'
+# Register the MultiSystem GPG keys
+echo -e "-------------------------------------------------------------------------"
+echo -e " Add the public key"
+echo -e "-------------------------------------------------------------------------"
+wget -q -O - http://liveusb.info/multisystem/depot/multisystem.asc | sudo apt-key add -
+
+
 # Notepadqq (https://notepadqq.com/wp/download/)
 echo -e "-------------------------------------------------------------------------"
 echo -e " Adding Personal Package Archives (PPA)...                        "

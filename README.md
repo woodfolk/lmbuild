@@ -44,6 +44,7 @@ Do not forget to type "./" in front of the name.
 
 Some of scripts call other scripts in the folder and should be keep together in the same folder.
 
+	
 PPA, GIT and Downloaded Installs
 
     app-ppa-install-atom-v*.sh                  # Atom
@@ -111,6 +112,177 @@ Themes and Icons:
 Other Files:
     bashrc                                      # ParrotOS .bashrc file Terminal
     ...
+
+## List of Installes Software
+
+::Utilities and Core Applications::
+	gcc
+	Terminator
+	Tilda
+	dvdisaster
+	GDebi Package Installer
+	Grsync
+	HTOP
+	Smb4k
+	git
+	curl
+	wget
+	synaptic
+	cabextract
+	dconf-cli
+	dconf-editor
+	p7zip-rar
+	p7zip-full
+	rar
+	unace
+	unrar
+	uudeview
+	sharutils
+	synapse
+	xrdp
+	zip
+	unzip
+	openconnect
+
+
+::Accessories::
+	Multisystem
+	ConvertAll
+	Gip IP Addresss Calculator
+	KeePassXC
+	GPA
+	UNetbootin
+	Ecther
+	ClamTK
+
+
+::Chrome Apps::
+	Chrome RDP
+	Google Hangouts
+	Google Play Music
+	Videostream for Google Chromecast
+
+
+::Education::
+	GNS3
+	Stellarium
+
+
+::Games::
+
+
+::Graphics::
+	Blender
+	Inkscape
+	Krita
+	Darktable
+	Scribus
+	Dia
+	Sweet Home 3D
+	Gpick
+	Shotwell
+
+
+::Internet::
+	Google Chrome Browser
+	Firefox Web Browser
+	Vivaldi
+	Brave Browser
+
+	Remmina
+	Remote Desktop Viewer
+	Teamviewer 
+	Putty SSH Client
+	FileZilla
+	SSL/SSH VNC Viewer
+
+	TOR Browser
+	TOR Browser Laucher Settings
+	Onion Circuit
+	OnionShare
+
+	Telegram Desktop
+	Pidgin Internet Messenger
+	Hex Chat
+	XChat IRC
+	Skype
+	Slack
+
+	Transmission
+	Synology Assistant
+	EtherApe
+	Wireshark
+	Zenmap
+	SABnzbd+
+
+
+::Office::
+	LibreOffice
+	LibreOffice Base
+	LibreOffice Calc
+	LibreOffice Draw
+	LibreOffice Impress
+	LibreOffice Math
+	LibreOffice Writer
+	Document Viewer
+	Calibre
+	E-book Editor
+	gLabels
+	Gramps
+	GnuCash
+	Homebanking
+	Planner
+	Texmaker
+	VYM - View Your Mind
+
+
+::Other (Electronics, Hamradio, and Virtualization)::
+	Arduino IDE
+	Eeschema
+	Fritzing
+	GerbView
+	LibreCAD
+	KiCad
+	PCB Calculator
+	PCBNew
+
+	GNU Radio Companion
+	CHIRP
+	GQRX
+
+	VMware Workstation
+	Virtualbox
+
+
+::Programming::
+	gEdit Text Editor
+	Geany
+	VS Code
+	Bluefish Editor
+	GVim
+	Notepad+
+
+
+::Sound & Video::
+	Audacity
+	Brasero
+	Cheese
+	dvd::rip
+	dvdauthor
+	EasyTAG
+	ffmpeg
+	HandBrake
+	Kazam
+	KDEnlive
+	Kino
+	MakeMKV
+	MPV Media Player
+	OBS
+	OpenShot Video Editor
+	Simplescreenrecorder
+	Sound Juicer
+	VLC Media Player
+
 
 Below are discriptions about the Icons and Themes scripts forked from Erik DuBois Ultimate-Linux-Mint-19-Cinnamon script https://github.com/erikdubois/Ultimate-Linux-Mint-19-Cinnamon
 
