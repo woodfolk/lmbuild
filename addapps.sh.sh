@@ -53,7 +53,7 @@ dpkg -l | grep -qw p7zip-full || sudo apt-get install -y p7zip-full	# p7zip-full
 dpkg -l | grep -qw p7zip-rar || sudo apt-get install -y p7zip-rar		# p7zip-rar
 dpkg -l | grep -qw rar || sudo apt-get install -y rar						# rar
 dpkg -l | grep -qw sharutils || sudo apt-get install -y sharutils		# sharutils
-# Smb4k
+dpkg -l | grep -qw smb4k || sudo apt-get install -y smb4k            # Smb4k
 dpkg -l | grep -qw synapse || sudo apt-get install -y synapse			# synapse
 dpkg -l | grep -qw synaptic || sudo apt-get install -y synaptic		# synaptic
 dpkg -l | grep -qw terminator || sudo apt-get install -y terminator  # Terminator
@@ -73,11 +73,13 @@ echo -e "::Accessories::"
 echo -e "------------------------------------------------------------------"
 dpkg -l | grep -qw clamav || sudo apt-get install -y clamav    		# ClamAV/ClamTK
 dpkg -l | grep -qw convertall || sudo apt-get install -y convertall  # ConvertAll
-sudo apt-get install -y etcher-electron                              # Ecther etcher-electron
+dpkg -l | grep -qw etcher-electron || 
+			sudo apt-get install -y etcher-electron                     # Ecther etcher-electron
 dpkg -l | grep -gip || sudo apt-get install -y gip    					# Gip IP Addresss Calculator
 dpkg -l | grep -qw gpa || sudo apt-get install -y gpa    				# GPA
 dpkg -l | grep -qw keepassxc || sudo apt-get install -y keepassxc    # KeePassXC
-# Multisystem
+dpkg -l | grep -qw multisystem || 
+			sudo apt-get install -y multisystem                         # Multisystem
 dpkg -l | grep -qw unetbootin || sudo apt-get install -y unetbootin  # UNetbootin
 
 echo -e "------------------------------------------------------------------"
