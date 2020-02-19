@@ -42,10 +42,34 @@ The installation scripts used to install software will be run via the terminal.
 	
 Do not forget to type "./" in front of the name.
 
-Some of scripts call other scripts in the folder and should be keep together in the same folder.
+Some scripts call other scripts in the folder and should be keep together in the same folder, while others were written to run as standalone scripts. These script are located in the the "standalones" folder. Scripts located in the "options" folder are customizable scripts for interactive installs and configurations for specific users or usernames.
 
-	
-PPA, GIT and Downloaded Installs
+Listed belew are the scripts located in the 'optional' folder. (Custom Configurations, Plugins, Themes and Icons]
+
+    customconfigs.sh
+    gstreamer-plugins.sh 
+    install-arc-flatabulous-theme-v1.sh
+    install-conky-aureola-v1.sh
+    install-gtk-arc-theme-v1.sh
+    install-icons-sardi-extra-v1.sh
+    install-icons-sardi-v1.sh
+    install-icons-surfn-v1.sh
+    install-plank-themes-v1.sh
+    install-theme-arc-colora-collection-3.4.v1.sh
+    install-theme-arc-colora-collection-3.6.v1.sh
+    install-theme-mint-y-colora-collection-3.6-v1.sh
+    ...
+
+Other files.
+
+    LICENSE                                     # GNU General Public License v2.0
+    README.md                                   # Readme File
+    TODO List                                   # Outline of things to do for project
+    bashrc                                      # ParrotOS .bashrc file Terminal
+    scipt-template.sh                           # Script template file (read only)
+    ...
+
+Listed below are the scripts located in the 'standalone' folder (PPA, GIT and Downloaded Installs).
 
     app-ppa-install-atom-v*.sh                  # Atom
     app-ppa-install-audiorecorder-v*.sh         # Audio-Recorder
@@ -94,24 +118,6 @@ PPA, GIT and Downloaded Installs
     ...
 
     app-snap-install-packages-v1.sh             # SnapCraft and SNAP Packages
-
-Themes and Icons:
-
-    install-arc-flatabulous-theme-v1.sh
-    install-conky-aureola-v1.sh
-    install-gtk-arc-theme-v1.sh
-    install-icons-sardi-extra-v1.sh
-    install-icons-sardi-v1.sh
-    install-icons-surfn-v1.sh
-    install-plank-themes-v1.sh
-    install-theme-arc-colora-collection-3.4.v1.sh
-    install-theme-arc-colora-collection-3.6.v1.sh
-    install-theme-mint-y-colora-collection-3.6-v1.sh
-    ...
-
-Other Files:
-    bashrc                                      # ParrotOS .bashrc file Terminal
-    ...
 
 ## List of Installes Software
 
@@ -188,26 +194,22 @@ Other Files:
 	Firefox Web Browser
 	Vivaldi
 	Brave Browser
-
 	Remmina
 	Remote Desktop Viewer
 	Teamviewer 
 	Putty SSH Client
 	FileZilla
 	SSL/SSH VNC Viewer
-
 	TOR Browser
 	TOR Browser Laucher Settings
 	Onion Circuit
 	OnionShare
-
 	Telegram Desktop
 	Pidgin Internet Messenger
 	Hex Chat
 	XChat IRC
 	Skype
 	Slack
-
 	Transmission
 	Synology Assistant
 	EtherApe
@@ -245,11 +247,9 @@ Other Files:
 	KiCad
 	PCB Calculator
 	PCBNew
-
 	GNU Radio Companion
 	CHIRP
 	GQRX
-
 	VMware Workstation
 	Virtualbox
 
