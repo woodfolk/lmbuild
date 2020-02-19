@@ -164,13 +164,13 @@ echo -e " Custom Applications & Configurations - Main lmbuild.sh script calling 
 echo -e "---------------------------------------------------------------------------------"
 sh custapps.sh
 
+# A list of application/software packages and utilities installed via this script are listed in the readme.md file.
 echo -e ""; clear; echo -e ""													# clear Screen
 echo -e "---------------------------------------------------------------------------------"
-echo -e " Clean up..."
+echo -e " Finishing up..."
 echo -e "---------------------------------------------------------------------------------"
-# A list of application software packages and utilities installed via this script can be
-# listed in the readme.md file.
 
+{LOGIC FOR RUNNING Optional Scripts Here}
 
 
 echo -e ""; clear; echo -e ""													# clear Screen
