@@ -77,6 +77,33 @@ sleep 2
 echo -e ""; clear; echo -e ""														# clear Screen
 
 
+#skype
+echo -e "-------------------------------------------------------------------------"
+echo -e " Installing Skype...                                              "
+echo -e "-------------------------------------------------------------------------"
+echo -e ""
+# enable multiarch for better 64-bit compatibility
+echo -e "-------------------------------------------------------------------------"
+echo -e " Enabling multiarch for better 64-bit compatibility...           "
+echo -e "-------------------------------------------------------------------------"
+sudo dpkg --add-architecture i386
+# downloading skype
+echo -e "-------------------------------------------------------------------------"
+echo -e " Downloading skype...                                            "
+echo -e "-------------------------------------------------------------------------"
+cd /tmp && wget https://repo.skype.com/latest/skypeforlinux-64.deb
+# Install Skype
+echo -e "-------------------------------------------------------------------------"
+echo -e " Installing Skype..."
+echo -e "-------------------------------------------------------------------------"
+sudo dpkg -i skypeforlinux-64.deb
+echo -e "-------------------------------------------------------------------------"
+echo -e " Skype installed                            "
+echo -e "-------------------------------------------------------------------------"
+sleep 2
+echo -e ""; clear; echo -e ""														# clear Screen
+
+
 #Slack
 # https://linuxconfig.org/how-to-install-slack-on-ubuntu-18-04-bionic-beaver-linux
 echo -e "-------------------------------------------------------------------------"
@@ -161,6 +188,12 @@ echo -e "-----------------------------------------------------------------------
 sleep 2
 echo -e ""; clear; echo -e ""														# clear Screen
 
+
+# VMware Workstation 15
+# (https://www.linuxbuzz.com/install-vmware-workstation-ubuntu-linuxmint/)
+cd /tmp && wget -O ~/vmware.bin https://www.vmware.com/go/getWorkstation-linux
+sudo chmod +x vmware.bin
+sudo ./vmware.bin
 
 
 {Code Goes Here}

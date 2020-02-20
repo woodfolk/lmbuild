@@ -91,6 +91,20 @@ echo -e "-----------------------------------------------------------------------
 wget -q -O - http://liveusb.info/multisystem/depot/multisystem.asc | sudo apt-key add -
 
 
+# MPV
+echo -e "-------------------------------------------------------------------------"
+echo -e " Add the MPV repository..."
+echo -e "-------------------------------------------------------------------------"
+sudo add-apt-repository ppa:mc3man/mpv-tests
+
+
+# VLC
+echo -e "-------------------------------------------------------------------------"
+echo -e " Add the VLC repository..."
+echo -e "-------------------------------------------------------------------------"
+sudo add-apt-repository ppa:videolan/master-daily
+
+
 # Notepadqq (https://notepadqq.com/wp/download/)
 echo -e "-------------------------------------------------------------------------"
 echo -e " Adding Personal Package Archives (PPA)...                        "
