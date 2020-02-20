@@ -53,6 +53,18 @@ echo -e "-----------------------------------------------------------------------
 sudo sh -c 'echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com bionic main" >> /etc/apt/sources.list.d/brave.list'
 
 
+# Microsoft Powershell
+# https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-powershell-core-on-linux?view=powershell-6
+echo -e "-------------------------------------------------------------------------"
+echo -e " Download the Microsoft repository GPG keys"
+echo -e "-------------------------------------------------------------------------"
+wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
+echo -e "-------------------------------------------------------------------------"
+echo -e "Register the Microsoft repository GPG keys"
+echo -e "-------------------------------------------------------------------------"
+sudo dpkg -i packages-microsoft-prod.deb
+
+
 # Microsoft Visual Code
 # Reference the following website(s):
 # https://go.microsoft.com/fwlink/?LinkID=760868
@@ -60,7 +72,7 @@ sudo sh -c 'echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.co
 # https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-18-04/
 # http://ubuntuhandbook.org/index.php/2018/05/vs-code-1-23-released-install-ubuntu-18-04/
 echo -e "-------------------------------------------------------------------------"
-#  Adding Microsoft Visual Studio Code                                           #
+echo -e " Adding Microsoft Visual Studio Code                                     "
 echo -e "-------------------------------------------------------------------------"
 # Adding the Microsoft repository
 echo -e "-------------------------------------------------------------------------"

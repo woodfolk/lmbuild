@@ -47,13 +47,14 @@ dpkg -l | grep -qw mpack || sudo apt-get install -y mpack            # mpack
 ddpkg -l | grep -qw ntfs-3g || sudo apt-get install -y ntfs-3g       # ntfs-3g
 dpkg -l | grep -qw ntfs-config ||
 			sudo apt-get install -y ntfs-config                         # ntfs-config
-dpkg -l | grep -qw openconnect ||
-			sudo apt-get install -y openconnect                         # openconnect
 dpkg -l | grep -qw network-manager-openconnect ||
 			sudo apt-get install -y network-manager-openconnect         # network-manager-openconnect
 dpkg -l | grep -qw network-manager-openconnect-gnome ||
 			sudo apt-get install -y network-manager-openconnect-gnome   # network-manager-openconnect-gnome
+dpkg -l | grep -qw openconnect ||
+			sudo apt-get install -y openconnect                         # openconnect
 dpkg -l | grep -qw p7zip-full || sudo apt-get install -y p7zip-full  # p7zip-full
+dpkg -l | grep -qw powershell || sudo apt-get install -y powershell  # Powershell
 dpkg -l | grep -qw p7zip-rar || sudo apt-get install -y p7zip-rar    # p7zip-rar
 dpkg -l | grep -qw rar || sudo apt-get install -y rar                # rar
 dpkg -l | grep -qw screenfetch ||
@@ -257,6 +258,8 @@ dpkg -l | grep -qw gramps || sudo apt-get install -y gramps          # Gramps
 dpkg -l | grep -qw homebank || sudo apt-get install -y homebank      # Homebanking
 dpkg -l | grep	-qw planner || sudo apt-get install -y planner        # Planner
 dpkg -l | grep -qw texmaker ||  sudo apt-get install -y texmaker     # Texmaker
+dpkg -l | grep	-qw ttf-mscorefonts-installer || 
+			sudo apt-get install -y ttf-mscorefonts-installer           # ttf-mscorefonts-installer
 dpkg -l | grep	-qw vym || sudo apt-get install -y vym                # VYM - View Your Mind
 
 echo -e "------------------------------------------------------------------"
