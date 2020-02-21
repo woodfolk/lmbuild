@@ -3,7 +3,7 @@
 # Name:			TODO List
 # Author:		Romano Woodfolk
 # Created:		February 15, 2020
-# Modified:		February 16, 2020 (110100100)
+# Modified:		February 21, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
@@ -21,6 +21,14 @@ lmbuild.sh
 addrepos.sh
 addapps.sh
 custapps.sh
+bashrc
+LICENSE
+README.md
+scipt-template.sh
+TODO List
+/optional
+/standalone
+
 
 ::Utilities and Core Applications::
 	gcc
