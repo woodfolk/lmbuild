@@ -15,9 +15,13 @@ set -e
 echo -e "------------------------------------------------------------------"
 echo -e "::Utilities and Core Applications::"
 echo -e "------------------------------------------------------------------"
-sudo apt-get install -y \gcc \make linux-headers-$(uname -r) dkms    # gcc
 sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $ (lsb_release -sc) universe"
 																							# "universe" repository
+dpkg -l | grep -qw abc || sudo apt-get install -y abc                # abc
+dpkg -l | grep -qw \gcc || sudo apt-get install -y \gcc              # gcc
+\make 
+linux-headers-$(uname -r) 
+dkms    
 dpkg -l | grep -qw build-essential || 
 			sudo apt-get install -y build-essential                     # build-essential
 dpkg -l | grep -qw systemd-coredump || 
@@ -203,21 +207,16 @@ dpkg -l | grep -qw remmina-plugin-telepathy ||
 dpkg -l | grep -qw remmina-plugin-xdmcp ||
 			sudo apt-get install -y remmina-plugin-xdmcp                # remmina-plugin-xdmcp
 dpkg -l | grep -qw vinagre || sudo apt-get install -y vinagre        # Remote Desktop Viewer
-#	SSL/SSH VNC Viewer
+dpkg -l | grep -qw ssvnc || sudo apt-get install -y ssvnc            # SSL/SSH VNC Viewer (SSVNC)
 #	Teamviewer  installed via the custapps.sh                         # Teamviewer
-##
-#	TOR Browser
-#	TOR Browser Laucher Settings
-#	Onion Circuit
-#	OnionShare
-##
+dpkg -l | grep -qw tor || sudo apt-get install -y tor                # TOR Browser
 dpkg -l | grep -qw hexchat || sudo apt-get install -y hexchat        # Hex Chat
 dpkg -l | grep -qw liferea || sudo apt-get install -y liferea        # liferea
 dpkg -l | grep -qw telegram-desktop ||
 			sudo apt-get install -y telegram-desktop                    # Telegram Desktop
 dpkg -l | grep -qw pidgin || sudo apt-get install -y pidgin          # Pidgin Internet Messenger
 #	Skype installed via the custapps.sh
-#	Slack installed via the custapps.sh
+dpkg -l | grep -qw slack || sudo apt-get install -y slack            # Slack
 #dpkg -l | grep -qw xchat || sudo apt-get install -y xchat           # XChat IRC
 ##
 dpkg -l | grep -qw etherape || sudo apt-get install -y etherape      # EtherApe
@@ -268,15 +267,22 @@ echo -e "------------------------------------------------------------------"
 dpkg -l | grep -qw arduino || sudo apt-get install -y arduino        # Arduino IDE
 dpkg -l | grep -qw arduino-mk || sudo apt-get install -y arduino-mk  # arduino-mk
 dpkg -l | grep -qw kicad || sudo apt-get install -y kicad            # Eeschema (kicad)
+dbpk -l | grep -qw eagle || sudo apt-get install -y eagle            # Eagle CAD
 dpkg -l | grep -qw fritzing || sudo apt-get install -y fritzing      # Fritzing
 dpkg -l | grep -qw fritzing-parts ||
 			sudo apt-get install -y fritzing-parts   							# fritzing-parts
+dpkg -l | grep -qw geda || sudo apt-get install -y geda              # gEdA
+dpkg -l | grep -qw gerbv || sudo apt-get install -y gerbv            # Gerbv
 # dpkg -l | grep -qw kicad || sudo apt-get install -y kicad          # GerbView (kicad)
 dpkg -l | grep -qw librecad || sudo apt-get install -y librecad      # LibreCAD
 dpkg -l | grep -qw kicad || sudo apt-get install -y kicad            # KiCad
 # dpkg -l | grep -qw kicad || sudo apt-get install -y kicad          # PCB Calculator (kicad)
 # dpkg -l | grep -qw kicad || sudo apt-get install -y kicad          # PCBNew (kicad)
 #
+dpkg -l | grep -qw pcb-gtk || sudo apt-get install -y pcb-gtk        # pcb-gtk
+dpkg -l | grep -qw pcb-lesstif || 
+			sudo apt-get install -y pcb-lesstif                         # pcb-lesstif
+dpkg -l | grep -qw visolate || sudo apt-get install -y visolate      # Visolate
 dpkg -l | grep -qw gnuradio || sudo apt-get install -y gnuradio   	# GNU Radio Companion
 dpkg -l | grep -qw chirp || sudo apt-get install -y chirp    			# CHIRP
 dpkg -l | grep -qw gqrx-sdr || sudo apt-get install -y gqrx-sdr   	# GQRX
@@ -317,6 +323,7 @@ dpkg -l | grep -qw easytag || sudo apt-get install -y easytag        # EasyTAG
 dpkg -l | grep -qw ffmpeg || sudo apt-get install -y ffmpeg          # ffmpeg
 dpkg -l | grep -qw guvcview || sudo apt-get install -y guvcview      # guvcview
 dpkg -l | grep -qw handbrake || sudo apt-get install -y handbrake    # HandBrake
+dpkg -l | grep -qw k3b || sudo apt-get installation-y k3b            # K3B
 dpkg -l | grep -qw kazam || sudo apt-get install -y kazam            # Kazam
 dpkg -l | grep -qw kdenlive || sudo apt-get install -y kdenlive      # KDEnlive
 dpkg -l | grep -qw kino || sudo apt-get install -y kino              # Kino
@@ -336,6 +343,12 @@ dpkg -l | grep -qw sound-juicer ||
 			sudo apt-get install -y sound-juicer                        # Sound Juicer
 dpkg -l | grep -qw vlc || sudo apt-get install -y vlc                # VLC Media Player
 
+echo -e "------------------------------------------------------------------"
+echo -e "::Themes::"
+echo -e "------------------------------------------------------------------"
+dpkg -l | grep -qw breeze-cursor-theme || 
+			sudo apt-get install -y breeze-cursor-theme                  # breeze-cursor-theme
+			
 #***************************************************************************#
 # End of addapps.sh script
 #***************************************************************************#

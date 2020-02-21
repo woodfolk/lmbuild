@@ -105,20 +105,20 @@ echo -e ""; clear; echo -e ""														# clear Screen
 
 
 #Slack
-# https://linuxconfig.org/how-to-install-slack-on-ubuntu-18-04-bionic-beaver-linux
-echo -e "-------------------------------------------------------------------------"
-echo -e " Downloading Slack Package                                      "
-echo -e "-------------------------------------------------------------------------"
-cd /tmp && wget -O ~/slack.deb "https://downloads.slack-edge.com/linux_releases/slack-desktop-4.3.2-amd64.deb"
-echo -e "-------------------------------------------------------------------------"
-echo -e " Installing Slack                                               "
-echo -e "-------------------------------------------------------------------------"
-sudo gdebi --n ~/slack.deb
-echo -e "-------------------------------------------------------------------------"
-echo -e " Slack Installed                          "
-echo -e "-------------------------------------------------------------------------"
-sleep 2
-echo -e ""; clear; echo -e ""														# clear Screen
+## https://linuxconfig.org/how-to-install-slack-on-ubuntu-18-04-bionic-beaver-linux
+#echo -e "-------------------------------------------------------------------------"
+#echo -e " Downloading Slack Package                                      "
+#echo -e "-------------------------------------------------------------------------"
+#cd /tmp && wget -O ~/slack.deb "https://downloads.slack-edge.com/linux_releases/slack-desktop-4.3.2-amd64.deb"
+#echo -e "-------------------------------------------------------------------------"
+#echo -e " Installing Slack                                               "
+#echo -e "-------------------------------------------------------------------------"
+#sudo gdebi --n ~/slack.deb
+#echo -e "-------------------------------------------------------------------------"
+#echo -e " Slack Installed                          "
+#echo -e "-------------------------------------------------------------------------"
+#sleep 2
+#echo -e ""; clear; echo -e ""														# clear Screen
 
 
 # Synology Assistant                                                     
@@ -129,9 +129,6 @@ echo -e " Downloading  Synology Assistant..."
 echo -e "-------------------------------------------------------------------------"
 echo -e ""
 cd /tmp && wget https://global.download.synology.com/download/Tools/Assistant/6.2-24922/Ubuntu/x86_64/synology-assistant_6.2-24922_amd64.deb
-echo -e "-------------------------------------------------------------------------"
-echo -e " Installing Synology Assistant..."
-echo -e "-------------------------------------------------------------------------"
 echo -e "-------------------------------------------------------------------------"
 echo -e " Installing Synology Assistant..."
 echo -e "-------------------------------------------------------------------------"
