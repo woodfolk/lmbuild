@@ -5,7 +5,7 @@ set -e
 # Name:			addrepos.sh
 # Author:		Romano Woodfolk
 # Created:		February 16, 2020
-# Modified:		February 16, 2020 (110100100)
+# Modified:		February 21, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
@@ -32,7 +32,7 @@ echo -e "-----------------------------------------------------------------------
 echo -e " Adding Etcher Personal Package Archives (PPA)..."
 echo -e "-------------------------------------------------------------------------"
 echo "deb https://dl.bintray.com/resin-io/debian stable etcher" | 
-			sudo tee /etc/apt/sources.list.d/etcher.list
+sudo tee /etc/apt/sources.list.d/etcher.list
 # adding the Etcher PPA repository key
 echo -e "-------------------------------------------------------------------------"
 echo -e " Adding the Etcher PPA repository key..."
@@ -126,9 +126,9 @@ sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
 
 #Unetbootin
 # https://blog.programster.org/ubuntu-18-04-install-unetbootin
-echo -e "------------------------------------------------------------------"
-echo -e "| Adding Unetbootin PPA                                          |"
-echo -e "------------------------------------------------------------------"
+echo -e "-------------------------------------------------------------------------"
+echo -e " Adding Unetbootin PPA                                          "
+echo -e "-------------------------------------------------------------------------"
 sudo add-apt-repository -y ppa:gezakovacs/ppa -y
 
 

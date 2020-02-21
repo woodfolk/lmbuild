@@ -5,7 +5,7 @@ set -e
 # Name:			lmbuild.sh
 # Author:		Romano Woodfolk
 # Created:		February 16, 2020
-# Modified:		February 00, 2020 (110100100)
+# Modified:		February 21, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
@@ -121,7 +121,7 @@ echo -e " Install Prerequisites                                          "
 echo -e "---------------------------------------------------------------------------------"
 dpkg -l | grep -qw gdebi-core || sudo apt-get install -y gdebi-core 	# gdebi-core
 dpkg -l | grep -qw wget || sudo apt-get install -y wget 					# wget
-echo -e ""; clear; echo -e ""    										# clear Screen
+echo -e ""; clear; echo -e ""                                        # clear Screen
 
 echo -e ""
 echo -e "---------------------------------------------------------------------------------"
