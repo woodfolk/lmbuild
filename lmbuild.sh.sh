@@ -169,9 +169,28 @@ echo -e ""; clear; echo -e ""													# clear Screen
 echo -e "---------------------------------------------------------------------------------"
 echo -e " Finishing up..."
 echo -e "---------------------------------------------------------------------------------"
-
+sleep 3
 {LOGIC FOR RUNNING Optional Scripts Here}
 
+echo -e ""; clear; echo -e ""    										# clear Screen
+echo -e "Flatpak for Flathub, Git, MultiSystem and VirtualBox all need to be configured before"
+echo -e "using those apps or services. Would you like to configure your applications now? "
+read A
+if [[ "$A" == "Y"  ||  "$A" == "y"||  "$A" == "Yes" ||  "$A" == "yes"  ]] ;
+then
+echo -e ""; clear; echo -e ""														# clear Screen
+echo -e "---------------------------------------------------------------------------------"
+echo -e " Preparing to configuring custom system settings...                              "
+echo -e "---------------------------------------------------------------------------------"
+sleep 2
+echo -e ""; clear; echo -e ""
+sh customconfigs.sh
+else
+echo -e ""; clear; echo -e ""    										# clear Screen
+echo -e "Run customconfigs.sh "
+echo -e " "
+fi
+sleep 2
 
 echo -e ""; clear; echo -e ""													# clear Screen
 echo -e "---------------------------------------------------------------------------------"
