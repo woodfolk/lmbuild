@@ -19,9 +19,10 @@ sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $ (lsb_release -sc
 																							# "universe" repository
 dpkg -l | grep -qw abc || sudo apt-get install -y abc                # abc
 dpkg -l | grep -qw \gcc || sudo apt-get install -y \gcc              # gcc
-\make 
-linux-headers-$(uname -r) 
-dkms    
+dpkg -l | grep -qw \make || sudo apt-get install -y \make            # make
+dpkg -l | grep -qw linux-headers-$(uname -r) || 
+         sudo apt-get install -y linux-headers-$(uname -r)           # linux-headers-$(uname -r)
+dpkg -l | grep -qw dkms || sudo apt-get install -y dkms              # dkms 
 dpkg -l | grep -qw build-essential || 
          sudo apt-get install -y build-essential                     # build-essential
 dpkg -l | grep -qw systemd-coredump || 
@@ -45,7 +46,7 @@ dpkg -l | grep -qw gnome-nettool ||
          sudo apt-get install -y gnome-nettool                       # gnome-nettool
 dpkg -l | grep -qw grsync || sudo apt-get install -y grsync          # Grsync
 dpkg -l | grep -qw hardinfo || sudo apt-get install -y hardinfo      # hardinfo
-dpkg -l | grep -qw htop || su apt-get install -y htop                # HTOP
+dpkg -l | grep -qw htop || sudo apt-get install -y htop                # HTOP
 dpkg -l | grep -qw mc || sudo apt-get install -y mc                  # mc (Midnight Commander)
 dpkg -l | grep -qw meld || sudo apt-get install -y meld              # meld
 dpkg -l | grep -qw mpack || sudo apt-get install -y mpack            # mpack
@@ -90,8 +91,8 @@ echo -e "::Accessories::"
 echo -e "-------------------------------------------------------------------------"
 dpkg -l | grep -qw clamav || sudo apt-get install -y clamav          # ClamAV/ClamTK
 dpkg -l | grep -qw convertall || sudo apt-get install -y convertall  # ConvertAll
-dpkg -l | grep -qw etcher-electron || 
-         sudo apt-get install -y etcher-electron                     # Ecther etcher-electron
+dpkg -l | grep -qw balena-etcher-electron || 
+         sudo apt-get install -y balena-etcher-electron              # Ecther etcher-electron
 dpkg -l | grep -gip || sudo apt-get install -y gip                   # Gip IP Addresss Calculator
 dpkg -l | grep -qw gpa || sudo apt-get install -y gpa                # GPA
 dpkg -l | grep -qw keepassxc || sudo apt-get install -y keepassxc    # KeePassXC
@@ -271,7 +272,7 @@ echo -e "-----------------------------------------------------------------------
 dpkg -l | grep -qw arduino || sudo apt-get install -y arduino        # Arduino IDE
 dpkg -l | grep -qw arduino-mk || sudo apt-get install -y arduino-mk  # arduino-mk
 dpkg -l | grep -qw kicad || sudo apt-get install -y kicad            # Eeschema (kicad)
-dbpk -l | grep -qw eagle || sudo apt-get install -y eagle            # Eagle CAD
+#dbpk -l | grep -qw eagle || sudo apt-get install -y eagle            # Eagle CAD
 dpkg -l | grep -qw fritzing || sudo apt-get install -y fritzing      # Fritzing
 dpkg -l | grep -qw fritzing-parts ||
          sudo apt-get install -y fritzing-parts                      # fritzing-parts

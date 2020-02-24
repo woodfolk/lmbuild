@@ -31,14 +31,12 @@ sudo add-apt-repository -y ppa:audio-recorder/ppa
 echo -e "-------------------------------------------------------------------------"
 echo -e " Adding Etcher Personal Package Archives (PPA)..."
 echo -e "-------------------------------------------------------------------------"
-echo "deb https://dl.bintray.com/resin-io/debian stable etcher" | 
-sudo tee /etc/apt/sources.list.d/etcher.list
+echo -e "deb https://deb.etcher.io stable etcher" | sudo tee /etc/apt/sources.list.d/balena-etcher.list
 # adding the Etcher PPA repository key
 echo -e "-------------------------------------------------------------------------"
 echo -e " Adding the Etcher PPA repository key..."
 echo -e "-------------------------------------------------------------------------"
-sudo apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 379CE192D401AB61
-
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
 
 # Brave Web Browser
 # Adding Brave Web Browser Repository
@@ -95,7 +93,7 @@ sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
 echo -e "-------------------------------------------------------------------------"
 echo -e " Add the MultiSystem repository..."
 echo -e "-------------------------------------------------------------------------"
-sudo apt-add-repository 'deb http://liveusb.info/multisystem/depot all main'
+sudo apt-add-repository -y 'deb http://liveusb.info/multisystem/depot all main'
 # Register the MultiSystem GPG keys
 echo -e "-------------------------------------------------------------------------"
 echo -e " Add the public key"
@@ -107,7 +105,7 @@ wget -q -O - http://liveusb.info/multisystem/depot/multisystem.asc | sudo apt-ke
 echo -e "-------------------------------------------------------------------------"
 echo -e " Add the MPV repository..."
 echo -e "-------------------------------------------------------------------------"
-sudo add-apt-repository ppa:mc3man/mpv-tests
+sudo add-apt-repository -y ppa:mc3man/mpv-tests
 
 
 # VLC
@@ -148,4 +146,4 @@ wget -qO- http://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key a
 echo -e "-------------------------------------------------------------------------"
 echo -e "| additional repositories added                                  |"
 echo -e "-------------------------------------------------------------------------"
-udo apt-get update -y
+sudo apt-get update -y
