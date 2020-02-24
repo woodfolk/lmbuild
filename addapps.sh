@@ -5,7 +5,7 @@ set -e
 # Name:			addapps.sh
 # Author:		Romano Woodfolk
 # Created:		February 16, 2020
-# Modified:		February 21, 2020 (110100100)
+# Modified:		February 23, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
@@ -274,7 +274,7 @@ dpkg -l | grep -qw kicad || sudo apt-get install -y kicad            # Eeschema 
 dbpk -l | grep -qw eagle || sudo apt-get install -y eagle            # Eagle CAD
 dpkg -l | grep -qw fritzing || sudo apt-get install -y fritzing      # Fritzing
 dpkg -l | grep -qw fritzing-parts ||
-         sudo apt-get install -y fritzing-parts   							# fritzing-parts
+         sudo apt-get install -y fritzing-parts                      # fritzing-parts
 dpkg -l | grep -qw geda || sudo apt-get install -y geda              # gEdA
 dpkg -l | grep -qw gerbv || sudo apt-get install -y gerbv            # Gerbv
 # dpkg -l | grep -qw kicad || sudo apt-get install -y kicad          # GerbView (kicad)
@@ -287,9 +287,9 @@ dpkg -l | grep -qw pcb-gtk || sudo apt-get install -y pcb-gtk        # pcb-gtk
 dpkg -l | grep -qw pcb-lesstif || 
          sudo apt-get install -y pcb-lesstif                         # pcb-lesstif
 dpkg -l | grep -qw visolate || sudo apt-get install -y visolate      # Visolate
-dpkg -l | grep -qw gnuradio || sudo apt-get install -y gnuradio   	# GNU Radio Companion
-dpkg -l | grep -qw chirp || sudo apt-get install -y chirp    			# CHIRP
-dpkg -l | grep -qw gqrx-sdr || sudo apt-get install -y gqrx-sdr   	# GQRX
+dpkg -l | grep -qw gnuradio || sudo apt-get install -y gnuradio      # GNU Radio Companion
+dpkg -l | grep -qw chirp || sudo apt-get install -y chirp            # CHIRP
+dpkg -l | grep -qw gqrx-sdr || sudo apt-get install -y gqrx-sdr      # GQRX
 #
 dpkg -l | grep -qw gnome-boxes ||
          sudo apt-get install -y gnome-boxes                         # gnome-boxes
@@ -308,7 +308,7 @@ echo -e "-----------------------------------------------------------------------
 
 dpkg -l | grep -qw bluefish || sudo apt-get install -y bluefish      # Bluefish Editor
 dpkg -l | grep -qw gedit || sudo apt-get install -y gedit            # gEdit Text Editor
-dpkg -l | grep -qw geany || sudo apt-get install -y geany   			# Geany
+dpkg -l | grep -qw geany || sudo apt-get install -y geany            # Geany
 dpkg -l | grep -qw vim-gtk || sudo apt-get install -y vim-gtk        # GVim
 dpkg -l | grep -qw notepadqq || sudo apt-get install -y notepadqq    # Notepad+
 dpkg -l | grep -qw code || sudo apt-get install -y code              # VS Code

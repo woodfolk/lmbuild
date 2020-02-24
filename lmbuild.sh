@@ -5,7 +5,7 @@ set -e
 # Name:			lmbuild.sh
 # Author:		Romano Woodfolk
 # Created:		February 16, 2020
-# Modified:		February 21, 2020 (110100100)
+# Modified:		February 23, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#

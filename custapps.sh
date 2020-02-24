@@ -5,7 +5,7 @@ set -e
 # Name:			custapps.sh
 # Author:		Romano Woodfolk
 # Created:		February 16, 2020
-# Modified:		February 21, 2020 (110100100)
+# Modified:		February 23, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
@@ -193,18 +193,19 @@ sudo chmod +x vmware.bin
 sudo ./vmware.bin
 
 
-{Code Goes Here}
-echo -e "-------------------------------------------------------------------------"
-echo -e "|                                                                       |"
-echo -e "-------------------------------------------------------------------------"
-dpkg -l | grep -qw xyz || sudo apt-get install -y xyz					# xyz
-cd /tmp && wget -q 
-{Code Goes Here}
-
 sudo apt-get install -f 
 
 
 echo -e "-------------------------------------------------------------------------"
 echo -e "::Custom Applications Complete::                                         "
 echo -e "-------------------------------------------------------------------------"
+#
+# {Code Goes Here}
+# echo -e "-------------------------------------------------------------------------"
+# echo -e "|                                                                       |"
+# echo -e "-------------------------------------------------------------------------"
+# dpkg -l | grep -qw xyz || sudo apt-get install -y xyz					# xyz
+# cd /tmp && wget -q 
+#{Code Goes Here}
+#
 
