@@ -1,0 +1,76 @@
+[/]
+extension-cache-updated=1548773304
+desktop-effects-unmaximize-transition='easeNone'
+desktop-effects-maximize-transition='easeInExpo'
+applet-cache-updated=1549398277
+desktop-effects-map-effect='traditional'
+workspace-osd-duration=400
+desktop-effects-close-effect='traditional'
+enabled-desklets=@as []
+desktop-effects-unmaximize-time=100
+panel-zone-icon-sizes='[{"panelId": 1, "left": 0, "center": 0, "right": 0}]'
+desktop-effects-map-time=100
+desktop-effects-minimize-effect='traditional'
+app-menu-label='Menu'
+panels-height=['1:27']
+next-applet-id=53
+panel-launchers=['DEPRECATED']
+desktop-effects-map-transition='easeOutQuad'
+desktop-effects-unmaximize-effect='none'
+panels-enabled=['1:0:top']
+desktop-effects-maximize-time=100
+desktop-effects-tile-transition='easeInQuad'
+desktop-effects-maximize-effect='none'
+enabled-applets=['panel1:left:0:menu@cinnamon.org:36', 'panel1:left:1:show-desktop@cinnamon.org:37', 'panel1:left:2:panel-launchers@cinnamon.org:38', 'panel1:left:3:window-list@cinnamon.org:39', 'panel1:right:4:systray@cinnamon.org:40', 'panel1:right:5:keyboard@cinnamon.org:41', 'panel1:right:6:notifications@cinnamon.org:42', 'panel1:right:7:removable-drives@cinnamon.org:43', 'panel1:right:8:user@cinnamon.org:44', 'panel1:right:9:network@cinnamon.org:45', 'panel1:right:10:sound@cinnamon.org:46', 'panel1:right:11:power@cinnamon.org:47', 'panel1:right:12:calendar@cinnamon.org:48', 'panel1:right:3:github-projects@morgan-design.com:49', 'panel1:right:2:placesCenter@scollins:50', 'panel1:right:1:vpnLookOut@claudiux:51', 'panel1:right:0:workspace-switcher@cinnamon.org:52']
+desktop-effects-minimize-time=160
+desktop-effects-minimize-transition='easeInQuad'
+desktop-effects-tile-effect='none'
+desktop-effects-close-transition='easeOutQuad'
+enabled-extensions=['DesktopCube@yare', 'transparent-panels@germanfr']
+workspace-osd-x=50
+workspace-osd-y=50
+desktop-effects-close-time=120
+desktop-effects-tile-time=100
+
+[settings-daemon/plugins/xsettings]
+buttons-have-icons=true
+
+[settings-daemon/peripherals/keyboard]
+numlock-state='on'
+
+[muffin]
+unredirect-fullscreen-windows=false
+
+[desktop/media-handling]
+autorun-x-content-start-app=['x-content/unix-software']
+autorun-x-content-ignore=@as []
+autorun-x-content-open-folder=@as []
+
+[desktop/background]
+picture-uri='file:///usr/share/backgrounds/linuxmint-tara/evablue_jacques_cartier.jpg'
+picture-options='zoom'
+
+[desktop/background/slideshow]
+image-source='directory:///home/woodfolk/Pictures'
+delay=15
+
+[desktop/interface]
+clock-show-date=true
+icon-theme='Mint-X-Purple'
+clock-show-seconds=true
+clock-use-24h=false
+gtk-theme='Mint-Y-Dark-Purple'
+
+[desktop/sound]
+event-sounds=false
+
+[desktop/wm/preferences]
+theme='Mint-Y-Dark'
+
+[theme]
+symbolic-relative-size=0.67000000000000004
+theme-cache-updated=1547555958
+name='Mint-Y-Dark-Purple'
+
+[cinnamon-session]
+quit-time-delay=60

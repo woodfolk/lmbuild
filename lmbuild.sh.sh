@@ -169,35 +169,69 @@ echo -e " Custom Applications & Configurations - Main lmbuild.sh script calling 
 echo -e "---------------------------------------------------------------------------------"
 sh custapps.sh
 
-# A list of application/software packages and utilities installed via this script are listed in the readme.md file.
+# A list of software packages & utilities installed are listed in the readme.md file.
 echo -e ""; clear; echo -e ""                                        # clear Screen
 echo -e "---------------------------------------------------------------------------------"
 echo -e " Finishing up..."
 echo -e "---------------------------------------------------------------------------------"
 sleep 3
-{LOGIC FOR RUNNING Optional Scripts Here}
+
+echo -e "---------------------------------------------------------------------------------"
+echo -e " Updating the repository database..."
+echo -e "---------------------------------------------------------------------------------"
+sudo apt-get update -y && sudo apt-get full-upgrade -y && sudo apt-get dist-upgrade -y &&
+sudo apt-get -f install -y && sudo apt-get autoremove
+echo -e ""; clear; echo -e ""                                        # clear Screen
 
 echo -e ""; clear; echo -e ""                                        # clear Screen
 echo -e "Flatpak for Flathub, Git, MultiSystem and VirtualBox all need to be configured before"
 echo -e "using those apps or services. Would you like to configure your applications now? "
 read A
 if [[ "$A" == "Y"  ||  "$A" == "y"||  "$A" == "Yes" ||  "$A" == "yes"  ]] ;
-then
-echo -e ""; clear; echo -e ""                                        # clear Screen
-echo -e "---------------------------------------------------------------------------------"
-echo -e " Preparing to configuring custom system settings...                              "
-echo -e "---------------------------------------------------------------------------------"
-sleep 2
-echo -e ""; clear; echo -e ""
-sh customconfigs.sh
-else
-echo -e ""; clear; echo -e ""                                        # clear Screen
-echo -e " You can run the customconfigs.sh at anytime. It is recommended that you edit the script"
-echo -e " with your own custom settings before running this the script. "
+   then
+      echo -e ""; clear; echo -e ""                                        # clear Screen
+      echo -e "---------------------------------------------------------------------------------"
+      echo -e " Preparing to configuring custom system settings...                              "
+      echo -e "---------------------------------------------------------------------------------"
+      sleep 2
+      echo -e ""; clear; echo -e ""
+      sh /optional/customconfigs.sh
+   else
+      echo -e ""; clear; echo -e ""                                        # clear Screen
+      echo -e " You can run the customconfigs.sh at anytime. It is recommended that you edit the script"
+      echo -e " with your own custom settings before running this the script. "
 fi
 sleep 2
-
 echo -e ""; clear; echo -e ""                                        # clear Screen
+
+echo -e "---------------------------------------------------------------------------------"
+echo -e " Setting Preset Cinnamon Settings...      "
+echo -e "---------------------------------------------------------------------------------"
+# Backing up and restoring your cinnamon settings
+# (dconf)
+# https://github.com/linuxmint/Cinnamon/wiki/Backing-up-and-restoring-your-cinnamon-settings-(dconf)
+# To backup:
+# From a terminal, run:
+# 
+# dconf dump /org/cinnamon/ > backup_of_my_cinnamon_settings
+#
+# save the backup_of_my_cinnamon_settings file somewhere for later
+# To reset to defaults:
+#
+# dconf reset -f /org/cinnamon/
+#
+# Note, cinnamon may freeze or crash doing this
+# To restore all your settings:
+#
+# dconf load /org/cinnamon/ < backup_of_my_cinnamon_settings
+#
+# Cinnamon may freeze crash after this (recommend at least logging out/back in)
+dconf dump /org/cinnamon/ > backup_of_my_cinnamon_settings
+
+dconf load /org/cinnamon/ < my_cinnamon_settings
+sleep 2
+echo -e ""; clear; echo -e ""                                        # clear Screen
+
 echo -e "---------------------------------------------------------------------------------"
 echo -e " Installs complete...."
 echo -e "---------------------------------------------------------------------------------"

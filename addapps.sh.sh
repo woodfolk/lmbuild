@@ -40,14 +40,16 @@ dpkg -l | grep -qw gdebi || sudo apt-get install -y gdebi            # GDebi Pac
 dpkg -l | grep -qw git || sudo apt-get install -y git                # git
 dpkg -l | grep -qw git-core || sudo apt-get install -y git-core      # git-core
 dpkg -l | grep -qw git-doc || sudo apt-get install -y git-doc        # git-doc
+dpkg -l | grep -qw glances || sudo apt-get install -y glances        # glances
 dpkg -l | grep -qw gnome-nettool ||
          sudo apt-get install -y gnome-nettool                       # gnome-nettool
 dpkg -l | grep -qw grsync || sudo apt-get install -y grsync          # Grsync
 dpkg -l | grep -qw hardinfo || sudo apt-get install -y hardinfo      # hardinfo
-# HTOP
+dpkg -l | grep -qw htop || su apt-get install -y htop                # HTOP
 dpkg -l | grep -qw mc || sudo apt-get install -y mc                  # mc (Midnight Commander)
 dpkg -l | grep -qw meld || sudo apt-get install -y meld              # meld
 dpkg -l | grep -qw mpack || sudo apt-get install -y mpack            # mpack
+dpkg -l | grep -qw neofetch || sudo apt-get install -y neofetch      # neofetch
 ddpkg -l | grep -qw ntfs-3g || sudo apt-get install -y ntfs-3g       # ntfs-3g
 dpkg -l | grep -qw ntfs-config ||
          sudo apt-get install -y ntfs-config                         # ntfs-config
@@ -77,6 +79,8 @@ dpkg -l | grep -qw unace || sudo apt-get install -y unace            # unace
 dpkg -l | grep -qw unrar || sudo apt-get install -y unrar            # unrar
 dpkg -l | grep -qw \unzip || sudo apt-get install -y \unzip          # unzip
 dpkg -l | grep -qw uudeview || sudo apt-get install -y uudeview      # uudeview
+dpkg -l | grep -qw util-vserver || 
+         sudo apt-get install -y util-vserver                        # vtop
 dpkg -l | grep -qw vim || sudo apt-get install -y vim                # vim
 dpkg -l | grep -qw xrdp || sudo apt-get install -y xrdp              # xrdp
 dpkg -l | grep -qw \zip || sudo apt-get install -y \zip              # zip
