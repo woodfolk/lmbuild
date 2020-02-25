@@ -24,8 +24,6 @@ sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu bionic-backports m
 sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse"
 sudo add-apt-repository "deb http://archive.canonical.com/ubuntu/ bionic partner"
 
-sudo add-apt-repository "#deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"
-
 echo -e "-------------------------------------------------------------------------"
 echo -e "::Additional Repositories and Personal Package Archives (PPA)::"
 echo -e "-------------------------------------------------------------------------"
