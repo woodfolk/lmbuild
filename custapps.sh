@@ -5,7 +5,7 @@ set -e
 # Name:			custapps.sh
 # Author:		Romano Woodfolk
 # Created:		February 16, 2020
-# Modified:		February 23, 2020 (110100100)
+# Modified:		February 25, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
@@ -132,7 +132,7 @@ cd /tmp && wget https://global.download.synology.com/download/Tools/Assistant/6.
 echo -e "-------------------------------------------------------------------------"
 echo -e " Installing Synology Assistant..."
 echo -e "-------------------------------------------------------------------------"
-sudo dpkg -i synology-assistant_6.2-23733_amd64.deb
+sudo dpkg -i synology-assistant_6.2-24922_amd64.deb
 echo -e "-------------------------------------------------------------------------"
 echo -e " Synology Installed "
 echo -e "-------------------------------------------------------------------------"
@@ -188,7 +188,7 @@ echo -e ""; clear; echo -e ""														# clear Screen
 
 # VMware Workstation 15
 # (https://www.linuxbuzz.com/install-vmware-workstation-ubuntu-linuxmint/)
-cd /tmp && wget -O ~/vmware.bin https://www.vmware.com/go/getWorkstation-linux
+wget -O ~/vmware.bin https://www.vmware.com/go/getWorkstation-linux
 sudo chmod +x vmware.bin
 sudo ./vmware.bin
 
