@@ -7,7 +7,7 @@ set -e
 # Created:		February 16, 2020
 # Modified:		February 25, 2020 (110100100)
 # Version:		1.0.0
-# Website: 		http://www.romanowoodfolk.com 
+# Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
 # Comments: This script contains the installation commands for Linux Mint 19.3    #
 # “Tricia” Cinnamon Edition an ubuntu based distributions.                        #
@@ -35,6 +35,20 @@ echo -e "-----------------------------------------------------------------------
 echo -e " Adding Audio-Recorder PPA...                                     "
 echo -e "-------------------------------------------------------------------------"
 sudo add-apt-repository -y ppa:audio-recorder/ppa
+
+
+# Google Chrome Web Browser
+# Install Google Chrome Web Browser
+# https://www.linuxbabe.com/ubuntu/install-google-chrome-ubuntu-18-04-lts
+echo -e "-------------------------------------------------------------------------"
+echo -e " Adding Google Chrome Repository...                                     "
+echo -e "-------------------------------------------------------------------------"
+sudo add-apt-repository -y 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main'
+echo -e "-------------------------------------------------------------------------"
+echo -e " Downloading Google Chrome Key...                                       "
+echo -e "-------------------------------------------------------------------------"
+wget -qO- https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+
 
 
 # Brave Web Browser
@@ -111,7 +125,7 @@ sudo add-apt-repository -y ppa:mc3man/mpv-tests
 echo -e "-------------------------------------------------------------------------"
 echo -e " Add the VLC repository..."
 echo -e "-------------------------------------------------------------------------"
-sudo add-apt-repository ppa:videolan/master-daily
+sudo add-apt-repository -y ppa:videolan/master-daily
 
 
 # Notepadqq (https://notepadqq.com/wp/download/)
