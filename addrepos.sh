@@ -5,13 +5,27 @@ set -e
 # Name:			addrepos.sh
 # Author:		Romano Woodfolk
 # Created:		February 16, 2020
-# Modified:		February 21, 2020 (110100100)
+# Modified:		February 25, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
 # Comments: This script contains the installation commands for Linux Mint 19.3    #
 # “Tricia” Cinnamon Edition an ubuntu based distributions.                        #
 #=================================================================================#
+echo -e "-------------------------------------------------------------------------"
+echo -e "::main restricted universe multiverse backport::"
+echo -e "-------------------------------------------------------------------------"
+sudo add-apt-repository "deb http://packages.linuxmint.com tricia main upstream import backport"
+
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu bionic main restricted universe multiverse"
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu bionic-updates main restricted universe multiverse"
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu bionic-backports main restricted universe multiverse"
+
+sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse"
+sudo add-apt-repository "deb http://archive.canonical.com/ubuntu/ bionic partner"
+
+sudo add-apt-repository "#deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"
+
 echo -e "-------------------------------------------------------------------------"
 echo -e "::Additional Repositories and Personal Package Archives (PPA)::"
 echo -e "-------------------------------------------------------------------------"
@@ -22,21 +36,6 @@ echo -e " Adding Audio-Recorder PPA...                                     "
 echo -e "-------------------------------------------------------------------------"
 sudo add-apt-repository -y ppa:audio-recorder/ppa
 
-
-# Balena Etcher 
-# Adding Etcher PPA
-# Reference the follow website:
-# https://www.omgubuntu.co.uk/2017/05/how-to-install-etcher-on-ubuntu
-# adding Etcher Personal Package Archives (PPA)
-echo -e "-------------------------------------------------------------------------"
-echo -e " Adding Etcher Personal Package Archives (PPA)..."
-echo -e "-------------------------------------------------------------------------"
-echo -e "deb https://deb.etcher.io stable etcher" | sudo tee /etc/apt/sources.list.d/balena-etcher.list
-# adding the Etcher PPA repository key
-echo -e "-------------------------------------------------------------------------"
-echo -e " Adding the Etcher PPA repository key..."
-echo -e "-------------------------------------------------------------------------"
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
 
 # Brave Web Browser
 # Adding Brave Web Browser Repository
