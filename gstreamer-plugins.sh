@@ -7,7 +7,7 @@ set -e
 # Created:		February 16, 2020
 # Modified:		February 21, 2020 (110100100)
 # Version:		1.0.0
-# Website: 		http://www.romanowoodfolk.com 
+# Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
 # Comments: This script contains the installation commands for Linux Mint 19.3    #
 # “Tricia” Cinnamon Edition an ubuntu based distributions.                        #
@@ -17,7 +17,7 @@ echo -e ""; clear; echo "";
 echo -e "-------------------------------------------------------------------------"
 echo -e " Installing GStreamer plugins and libraries..."
 echo -e "-------------------------------------------------------------------------"
-dpkg -l | grep -qw frei0r-plugins || 
+dpkg -l | grep -qw frei0r-plugins ||
          sudo apt-get install -y frei0r-plugins                      # frei0r-plugins
 dpkg -l | grep -qw libgstreamer1.0-0 ||
          sudo apt-get install -y libgstreamer1.0-0                   # GStreamer library
@@ -57,6 +57,7 @@ dpkg -l | grep -qw libdvdread4 ||
          sudo apt-get install -y libdvdread4                         # libdvdread4
 dpkg -l | grep -qw libdvdcss2 ||
          sudo apt-get install -y libdvdcss2                          # libdvdcss2
+sudo apt-get install -f
 echo -e "-------------------------------------------------------------------------"
 echo -e " GStreamer plugins and libraries installed                      "
 echo -e "-------------------------------------------------------------------------"

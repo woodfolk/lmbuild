@@ -7,7 +7,7 @@ set -e
 # Created:		February 16, 2020
 # Modified:		February 25, 2020 (110100100)
 # Version:		1.0.0
-# Website: 		http://www.romanowoodfolk.com 
+# Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
 # Comments: This script contains the installation commands for Linux Mint 19.3    #
 # “Tricia” Cinnamon Edition an ubuntu based distributions.                        #
@@ -18,14 +18,14 @@ echo -e "-----------------------------------------------------------------------
 dpkg -l | grep -qw abc || sudo apt-get install -y abc                # abc example
 dpkg -l | grep -qw \gcc || sudo apt-get install -y \gcc              # gcc
 dpkg -l | grep -qw \make || sudo apt-get install -y \make            # make
-dpkg -l | grep -qw linux-headers-$(uname -r) || 
+dpkg -l | grep -qw linux-headers-$(uname -r) ||
          sudo apt-get install -y linux-headers-$(uname -r)           # linux-headers-$(uname -r)
-dpkg -l | grep -qw dkms || sudo apt-get install -y dkms              # dkms 
-dpkg -l | grep -qw build-essential || 
+dpkg -l | grep -qw dkms || sudo apt-get install -y dkms              # dkms
+dpkg -l | grep -qw build-essential ||
          sudo apt-get install -y build-essential                     # build-essential
-dpkg -l | grep -qw systemd-coredump || 
+dpkg -l | grep -qw systemd-coredump ||
          sudo apt-get install systemd-coredump                       # systemd-coredump
-dpkg -l | grep -qw software-properties-common || 
+dpkg -l | grep -qw software-properties-common ||
          sudo apt-get install -y software-properties-common          # software-properties-common package
 dpkg -l | grep -qw arj || sudo apt-get install -y arj                # arj
 dpkg -l | grep -qw catfish || sudo apt-get install -y catfish        # catfish
@@ -78,7 +78,7 @@ dpkg -l | grep -qw unace || sudo apt-get install -y unace            # unace
 dpkg -l | grep -qw unrar || sudo apt-get install -y unrar            # unrar
 dpkg -l | grep -qw \unzip || sudo apt-get install -y \unzip          # unzip
 dpkg -l | grep -qw uudeview || sudo apt-get install -y uudeview      # uudeview
-dpkg -l | grep -qw util-vserver || 
+dpkg -l | grep -qw util-vserver ||
          sudo apt-get install -y util-vserver                        # vtop
 dpkg -l | grep -qw vim || sudo apt-get install -y vim                # vim
 dpkg -l | grep -qw xrdp || sudo apt-get install -y xrdp              # xrdp
@@ -92,7 +92,7 @@ dpkg -l | grep -qw convertall || sudo apt-get install -y convertall  # ConvertAl
 dpkg -l | grep -gip || sudo apt-get install -y gip                   # Gip IP Addresss Calculator
 dpkg -l | grep -qw gpa || sudo apt-get install -y gpa                # GPA
 dpkg -l | grep -qw keepassxc || sudo apt-get install -y keepassxc    # KeePassXC
-dpkg -l | grep -qw multisystem || 
+dpkg -l | grep -qw multisystem ||
          sudo apt-get install -y multisystem                         # Multisystem
 dpkg -l | grep -qw unetbootin || sudo apt-get install -y unetbootin  # UNetbootin
 
@@ -168,15 +168,15 @@ dpkg -l | grep -qw sweethome3d ||
 echo -e "-------------------------------------------------------------------------"
 echo -e "::Internet::"
 echo -e "-------------------------------------------------------------------------"
-#	Google Chrome Browser installed via the custapps.sh               # Google Chrome Browser 
+#	Google Chrome Browser installed via the custapps.sh               # Google Chrome Browser
 dpkg -l | grep	-qw firefox || sudo apt-get install -y firefox        # Firefox Web Browser
-dpkg -l | grep	-qw vivaldi-stable || 
+dpkg -l | grep	-qw vivaldi-stable ||
          sudo apt-get install -y vivaldi-stable                      # Vivaldi
-dpkg -l | grep	-qw vivaldi-snapshot || 
+dpkg -l | grep	-qw vivaldi-snapshot ||
          sudo apt-get install -y vivaldi-snapshot                    # Vivaldi
-dpkg -l | grep -qw brave-browser || 
+dpkg -l | grep -qw brave-browser ||
          sudo apt-get install -y brave-browser                       # Brave brave-browser
-dpkg -l | grep -qw brave-keyring || 
+dpkg -l | grep -qw brave-keyring ||
          sudo apt-get install -y brave-keyring                       # Brave brave-keyring
 dpkg -l | grep -qw dropbox || sudo apt-get install -y dropbox        # dropbox
 dpkg -l | grep -qw filezilla ||
@@ -223,12 +223,12 @@ dpkg -l | grep -qw slack || sudo apt-get install -y slack            # Slack
 dpkg -l | grep -qw etherape || sudo apt-get install -y etherape      # EtherApe
 dpkg -l | grep -qw etherape-data ||
          sudo apt-get install -y etherape-data                       # etherape-data
-dpkg -l | grep -qw sabnzbdplus || 
+dpkg -l | grep -qw sabnzbdplus ||
          sudo apt-get install -y sabnzbdplus                         # SABnzbd+
 #	Synology Assistant installed via the custapps.sh
-dpkg -l | grep -qw transmission || 
+dpkg -l | grep -qw transmission ||
          sudo apt-get install -y transmission                        # Transmission
-dpkg -l | grep -qw wireshark-qt || 
+dpkg -l | grep -qw wireshark-qt ||
          sudo apt-get install -y wireshark-qt                        # Wireshark
 dpkg -l | grep -qw zenmap || sudo apt-get install -y zenmap          # Zenmap
 
@@ -258,7 +258,7 @@ dpkg -l | grep -qw gramps || sudo apt-get install -y gramps          # Gramps
 dpkg -l | grep -qw homebank || sudo apt-get install -y homebank      # Homebanking
 dpkg -l | grep	-qw planner || sudo apt-get install -y planner        # Planner
 dpkg -l | grep -qw texmaker ||  sudo apt-get install -y texmaker     # Texmaker
-dpkg -l | grep	-qw ttf-mscorefonts-installer || 
+dpkg -l | grep	-qw ttf-mscorefonts-installer ||
          sudo apt-get install -y ttf-mscorefonts-installer           # ttf-mscorefonts-installer
 dpkg -l | grep	-qw vym || sudo apt-get install -y vym                # VYM - View Your Mind
 
@@ -280,7 +280,7 @@ dpkg -l | grep -qw kicad || sudo apt-get install -y kicad            # KiCad
 # dpkg -l | grep -qw kicad || sudo apt-get install -y kicad          # PCBNew (kicad)
 #
 dpkg -l | grep -qw pcb-gtk || sudo apt-get install -y pcb-gtk        # pcb-gtk
-dpkg -l | grep -qw pcb-lesstif || 
+dpkg -l | grep -qw pcb-lesstif ||
          sudo apt-get install -y pcb-lesstif                         # pcb-lesstif
 dpkg -l | grep -qw visolate || sudo apt-get install -y visolate      # Visolate
 dpkg -l | grep -qw gnuradio || sudo apt-get install -y gnuradio      # GNU Radio Companion
@@ -290,14 +290,14 @@ dpkg -l | grep -qw gqrx-sdr || sudo apt-get install -y gqrx-sdr      # GQRX
 dpkg -l | grep -qw gnome-boxes ||
          sudo apt-get install -y gnome-boxes                         # gnome-boxes
 #	VMware Workstation installed via the custapps.sh
-dpkg -l | grep -qw virtualbox || 
+dpkg -l | grep -qw virtualbox ||
          sudo apt-get install -y virtualbox                          # Virtualbox
-dpkg -l | grep -qw virtualbox-ext-pack || 
+dpkg -l | grep -qw virtualbox-ext-pack ||
          sudo apt-get install -y virtualbox-ext-pack                 # Virtualbox-Ext-Pack
 dpkg -l | grep -qw vde2 || sudo apt-get install -y vde2              # vde2
-dpkg -l | grep -qw virtualbox-guest-additions-iso || 
+dpkg -l | grep -qw virtualbox-guest-additions-iso ||
          sudo apt-get install -y virtualbox-guest-additions-iso      # virtualbox-guest-additions-iso
-			
+
 echo -e "-------------------------------------------------------------------------"
 echo -e "::Programming::"
 echo -e "-------------------------------------------------------------------------"
@@ -313,7 +313,7 @@ echo -e "-----------------------------------------------------------------------
 echo -e "::Sound & Video::"
 echo -e "-------------------------------------------------------------------------"
 dpkg -l | grep -qw audacity || sudo apt-get install -y audacity      # Audacity
-dpkg -l | grep -qw audio-recorder || 
+dpkg -l | grep -qw audio-recorder ||
          sudo apt-get install -y audio-recorder                      # Audio Recorder
 dpkg -l | grep -qw brasero || sudo apt-get install -y brasero        # Brasero
 dpkg -l | grep -qw cheese || sudo apt-get install -y cheese          # Cheese
@@ -334,7 +334,7 @@ dpkg -l | grep -qw libavcodec-extra ||
 dpkg -l | grep -qw mpv || sudo apt-get install -y mpv                # MPV Media Player
 dpkg -l | grep -qw obs-studio || sudo apt-get install -y obs-studio  # OBS
 dpkg -l | grep -qw openshot || sudo apt-get install -y openshot      # OpenShot Video Editor
-dpkg -l | grep -qw mint-meta-codecs || 
+dpkg -l | grep -qw mint-meta-codecs ||
          sudo apt-get install -y mint-meta-codecs                    # mint-meta-codecs
 dpkg -l | grep -qw simplescreenrecorder ||
          sudo apt-get install -y simplescreenrecorder                # Simplescreenrecorder
@@ -346,9 +346,9 @@ dpkg -l | grep -qw  youtube-dl || apt-get install -y youtube-dl      # youtube-d
 echo -e "-------------------------------------------------------------------------"
 echo -e "::Themes::"
 echo -e "-------------------------------------------------------------------------"
-dpkg -l | grep -qw breeze-cursor-theme || 
+dpkg -l | grep -qw breeze-cursor-theme ||
          sudo apt-get install -y breeze-cursor-theme                  # breeze-cursor-theme
-			
+sudo apt-get install -f
 #***************************************************************************#
 # End of addapps.sh script
 #***************************************************************************#
