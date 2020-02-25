@@ -5,7 +5,7 @@ set -e
 # Name:			customconfigs.sh
 # Author:		Romano Woodfolk
 # Created:		February 17, 2020
-# Modified:		February 17, 2020 (110100100)
+# Modified:		February 25, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
@@ -42,7 +42,7 @@ echo -e ""; clear; echo -e ""                                     # clear Screen
 echo -e "-------------------------------------------------------------------------"
 echo -e " Adding multisystem users to the adm group..."
 echo -e "-------------------------------------------------------------------------"
-sudo / usr / sbin / usermod -a -G adm "$ SUDO_USER"
+sudo /usr/sbin/usermod -a -G adm "$SUDO_USER"
 #
 #=================================================================================#
 
