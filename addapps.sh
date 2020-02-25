@@ -15,9 +15,7 @@ set -e
 echo -e "-------------------------------------------------------------------------"
 echo -e "::Utilities and Core Applications::"
 echo -e "-------------------------------------------------------------------------"
-sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $ (lsb_release -sc) universe"
-																							# "universe" repository
-dpkg -l | grep -qw abc || sudo apt-get install -y abc                # abc
+dpkg -l | grep -qw abc || sudo apt-get install -y abc                # abc example
 dpkg -l | grep -qw \gcc || sudo apt-get install -y \gcc              # gcc
 dpkg -l | grep -qw \make || sudo apt-get install -y \make            # make
 dpkg -l | grep -qw linux-headers-$(uname -r) || 
@@ -91,8 +89,6 @@ echo -e "::Accessories::"
 echo -e "-------------------------------------------------------------------------"
 dpkg -l | grep -qw clamav || sudo apt-get install -y clamav          # ClamAV/ClamTK
 dpkg -l | grep -qw convertall || sudo apt-get install -y convertall  # ConvertAll
-dpkg -l | grep -qw balena-etcher-electron || 
-         sudo apt-get install -y balena-etcher-electron              # Ecther etcher-electron
 dpkg -l | grep -gip || sudo apt-get install -y gip                   # Gip IP Addresss Calculator
 dpkg -l | grep -qw gpa || sudo apt-get install -y gpa                # GPA
 dpkg -l | grep -qw keepassxc || sudo apt-get install -y keepassxc    # KeePassXC
@@ -272,7 +268,6 @@ echo -e "-----------------------------------------------------------------------
 dpkg -l | grep -qw arduino || sudo apt-get install -y arduino        # Arduino IDE
 dpkg -l | grep -qw arduino-mk || sudo apt-get install -y arduino-mk  # arduino-mk
 dpkg -l | grep -qw kicad || sudo apt-get install -y kicad            # Eeschema (kicad)
-#dbpk -l | grep -qw eagle || sudo apt-get install -y eagle            # Eagle CAD
 dpkg -l | grep -qw fritzing || sudo apt-get install -y fritzing      # Fritzing
 dpkg -l | grep -qw fritzing-parts ||
          sudo apt-get install -y fritzing-parts                      # fritzing-parts
@@ -328,7 +323,7 @@ dpkg -l | grep -qw easytag || sudo apt-get install -y easytag        # EasyTAG
 dpkg -l | grep -qw ffmpeg || sudo apt-get install -y ffmpeg          # ffmpeg
 dpkg -l | grep -qw guvcview || sudo apt-get install -y guvcview      # guvcview
 dpkg -l | grep -qw handbrake || sudo apt-get install -y handbrake    # HandBrake
-dpkg -l | grep -qw k3b || sudo apt-get installation-y k3b            # K3B
+dpkg -l | grep -qw k3b || sudo apt-get install -y k3b                # K3B
 dpkg -l | grep -qw kazam || sudo apt-get install -y kazam            # Kazam
 dpkg -l | grep -qw kdenlive || sudo apt-get install -y kdenlive      # KDEnlive
 dpkg -l | grep -qw kino || sudo apt-get install -y kino              # Kino
@@ -336,7 +331,6 @@ dpkg -l | grep -qw libguvcview ||
          sudo apt-get install -y libguvcview                         # libguvcview
 dpkg -l | grep -qw libavcodec-extra ||
          sudo apt-get install -y libavcodec-extra                    # libavcodec-extra
-# MakeMKV
 dpkg -l | grep -qw mpv || sudo apt-get install -y mpv                # MPV Media Player
 dpkg -l | grep -qw obs-studio || sudo apt-get install -y obs-studio  # OBS
 dpkg -l | grep -qw openshot || sudo apt-get install -y openshot      # OpenShot Video Editor
