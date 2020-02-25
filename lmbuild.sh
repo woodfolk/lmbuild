@@ -7,7 +7,7 @@ set -e
 # Created:		February 16, 2020
 # Modified:		February 25, 2020 (110100100)
 # Version:		1.0.0
-# Website: 		http://www.romanowoodfolk.com 
+# Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
 # Comments: This script contains the installation commands for Linux Mint 19.3    #
 # “Tricia” Cinnamon Edition an ubuntu based distributions.                        #
@@ -113,7 +113,7 @@ echo -e "-----------------------------------------------------------------------
 echo -e " Updating the repository database..."
 echo -e "---------------------------------------------------------------------------------"
 sudo apt-get -f install -y
-sudo apt-get update -y && sudo apt-get upgrade -y 
+sudo apt-get update -y && sudo apt-get upgrade -y
 sudo apt-get full-upgrade -y && sudo apt-get dist-upgrade -y
 sudo apt-get -f install -y && sudo apt-get autoremove
 echo -e ""; clear; echo -e ""                                        # clear Screen
@@ -153,7 +153,7 @@ sh addrepos.sh
 echo -e "---------------------------------------------------------------------------------"
 echo -e " Updating the repository database..."
 echo -e "---------------------------------------------------------------------------------"
-sudo apt-get update -y 
+sudo apt-get update -y
 echo -e ""; clear; echo -e ""                                        # clear Screen
 
 echo -e "---------------------------------------------------------------------------------"
@@ -181,7 +181,9 @@ sleep 3
 echo -e "---------------------------------------------------------------------------------"
 echo -e " Updating the repository database..."
 echo -e "---------------------------------------------------------------------------------"
-sudo apt-get update -y && sudo apt-get full-upgrade -y && sudo apt-get dist-upgrade -y &&
+sudo apt-get install -f
+sudo apt-get update -y && sudo apt-get upgrade -y
+sudo apt-get full-upgrade -y && sudo apt-get dist-upgrade -y
 sudo apt-get -f install -y && sudo apt-get autoremove
 echo -e ""; clear; echo -e ""                                        # clear Screen
 
@@ -214,7 +216,7 @@ echo -e "-----------------------------------------------------------------------
 # https://github.com/linuxmint/Cinnamon/wiki/Backing-up-and-restoring-your-cinnamon-settings-(dconf)
 # To backup:
 # From a terminal, run:
-# 
+#
 # dconf dump /org/cinnamon/ > backup_of_my_cinnamon_settings
 #
 # save the backup_of_my_cinnamon_settings file somewhere for later
@@ -229,7 +231,6 @@ echo -e "-----------------------------------------------------------------------
 #
 # Cinnamon may freeze crash after this (recommend at least logging out/back in)
 dconf dump /org/cinnamon/ > backup_of_my_cinnamon_settings
-
 dconf load /org/cinnamon/ < my_cinnamon_settings
 sleep 2
 echo -e ""; clear; echo -e ""                                        # clear Screen
@@ -243,7 +244,6 @@ exit
 #=================================================================================#
 # End Of Script       											                  			 #
 #=================================================================================#
-
 #dpkg -l | grep -qw xyz || sudo apt-get install -y xyz               # xyz
-#cd /tmp && wget -q 
+#cd /tmp && wget -q
 
