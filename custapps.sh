@@ -7,13 +7,41 @@ set -e
 # Created:		February 16, 2020
 # Modified:		February 25, 2020 (110100100)
 # Version:		1.0.0
-# Website: 		http://www.romanowoodfolk.com 
+# Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
 # Comments: This script contains the installation commands for Linux Mint 19.3    #
 # “Tricia” Cinnamon Edition an ubuntu based distributions.                        #
 #=================================================================================#
 echo -e "-------------------------------------------------------------------------"
 echo -e "::Custom Applications::"
+echo -e "-------------------------------------------------------------------------"
+sleep 2
+echo -e ""; clear; echo -e ""														# clear Screen
+
+echo -e "-------------------------------------------------------------------------"
+echo -e " EULA Agreements Installs"
+echo -e "-------------------------------------------------------------------------"
+# Microsoft True Type Fonts ttf-mscorefonts
+dpkg -l | grep	-qw ttf-mscorefonts-installer ||
+         sudo apt-get install -y ttf-mscorefonts-installer           # ttf-mscorefonts-installer
+sudo apt-get install -f
+
+# VirtualBox
+dpkg -l | grep -qw virtualbox ||
+         sudo apt-get install -y virtualbox                          # Virtualbox
+dpkg -l | grep -qw virtualbox-ext-pack ||
+         sudo apt-get install -y virtualbox-ext-pack                 # Virtualbox-Ext-Pack
+dpkg -l | grep -qw vde2 || sudo apt-get install -y vde2              # vde2
+dpkg -l | grep -qw virtualbox-guest-additions-iso ||
+         sudo apt-get install -y virtualbox-guest-additions-iso      # virtualbox-guest-additions-iso
+sudo apt-get install -f
+
+# Wireshark
+dpkg -l | grep -qw wireshark-qt ||
+         sudo apt-get install -y wireshark-qt                        # Wireshark
+sudo apt-get install -f
+echo -e "-------------------------------------------------------------------------"
+echo -e " EULA Agreements Installs"
 echo -e "-------------------------------------------------------------------------"
 sleep 2
 echo -e ""; clear; echo -e ""														# clear Screen
@@ -41,14 +69,15 @@ echo -e ""; clear; echo -e ""														# clear Screen
 echo -e "-------------------------------------------------------------------------"
 echo -e " Instaling prerequisite for multisystem...                               "
 echo -e "-------------------------------------------------------------------------"
-dpkg -l | grep -qw software-properties-common || 
+dpkg -l | grep -qw software-properties-common ||
 			sudo apt-get install -y software-properties-common          # software-properties-common package
 ## Install MultiSystem
 echo -e "-------------------------------------------------------------------------"
 echo -e " Installing multisystem...                                         "
 echo -e "-------------------------------------------------------------------------"
-dpkg -l | grep -qw multisystem || 
+dpkg -l | grep -qw multisystem ||
 			sudo apt-get install -y multisystem                         # multisystem
+sudo apt-get install -f
 echo -e "-------------------------------------------------------------------------"
 echo -e " multisystem Installed "
 echo -e "-------------------------------------------------------------------------"
@@ -70,6 +99,7 @@ echo -e "-----------------------------------------------------------------------
 echo -e " Installing OceanAudio...                                          "
 echo -e "-------------------------------------------------------------------------"
 sudo gdebi --n ocenaudio_debian9_64.deb
+sudo apt-get install -f
 echo -e "-------------------------------------------------------------------------"
 echo -e " OceanAudio Installed "
 echo -e "-------------------------------------------------------------------------"
@@ -97,6 +127,7 @@ echo -e "-----------------------------------------------------------------------
 echo -e " Installing Skype..."
 echo -e "-------------------------------------------------------------------------"
 sudo dpkg -i skypeforlinux-64.deb
+sudo apt-get install -f
 echo -e "-------------------------------------------------------------------------"
 echo -e " Skype installed                            "
 echo -e "-------------------------------------------------------------------------"
@@ -121,7 +152,7 @@ echo -e ""; clear; echo -e ""														# clear Screen
 #echo -e ""; clear; echo -e ""														# clear Screen
 
 
-# Synology Assistant                                                     
+# Synology Assistant
 # https://www.virtono.com/community/tutorial-how-to/installing-synology-assistant-on-ubuntu/
 # https://www.synology.com/en-us/support/download/DS1511+#utilities
 echo -e "-------------------------------------------------------------------------"
@@ -133,6 +164,7 @@ echo -e "-----------------------------------------------------------------------
 echo -e " Installing Synology Assistant..."
 echo -e "-------------------------------------------------------------------------"
 sudo dpkg -i synology-assistant_6.2-24922_amd64.deb
+sudo apt-get install -f
 echo -e "-------------------------------------------------------------------------"
 echo -e " Synology Installed "
 echo -e "-------------------------------------------------------------------------"
@@ -179,6 +211,7 @@ echo -e " Installing Telegram..."
 echo -e "-------------------------------------------------------------------------"
 cd /tmp && wget -O- https://telegram.org/dl/desktop/linux | sudo tar xJ -C /opt/
 sudo ln -s /opt/Telegram/Telegram /usr/local/bin/telegram-desktop
+sudo apt-get install -f
 echo -e "-------------------------------------------------------------------------"
 echo -e " Telegram Installed		                          "
 echo -e "-------------------------------------------------------------------------"
@@ -188,12 +221,18 @@ echo -e ""; clear; echo -e ""														# clear Screen
 
 # VMware Workstation 15
 # (https://www.linuxbuzz.com/install-vmware-workstation-ubuntu-linuxmint/)
+echo -e "-------------------------------------------------------------------------"
+echo -e " Installing VMware Workstation		                          "
+echo -e "-------------------------------------------------------------------------"														# clear Screen
 wget -O ~/vmware.bin https://www.vmware.com/go/getWorkstation-linux
 sudo chmod +x vmware.bin
 sudo ./vmware.bin
-
-
-sudo apt-get install -f 
+sudo apt-get install -f
+echo -e "-------------------------------------------------------------------------"
+echo -e " VMware Workstation Installed		                          "
+echo -e "-------------------------------------------------------------------------"
+sleep 2
+echo -e ""; clear; echo -e ""														# clear Screen
 
 
 echo -e "-------------------------------------------------------------------------"
@@ -205,7 +244,7 @@ echo -e "-----------------------------------------------------------------------
 # echo -e "|                                                                       |"
 # echo -e "-------------------------------------------------------------------------"
 # dpkg -l | grep -qw xyz || sudo apt-get install -y xyz					# xyz
-# cd /tmp && wget -q 
+# cd /tmp && wget -q
 #{Code Goes Here}
 #
 

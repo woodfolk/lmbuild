@@ -163,7 +163,7 @@ dpkg -l | grep -qw scribus-template ||
          sudo apt-get install -y scribus-template                    # scribus-template
 dpkg -l | grep -qw shotwell || sudo apt-get install -y shotwell      # Shotwell
 dpkg -l | grep -qw sweethome3d ||
-			sudo apt-get install -y sweethome3d                         # Sweet Home 3D
+			sudo apt-get install -y sweethome3d                      # Sweet Home 3D
 
 echo -e "-------------------------------------------------------------------------"
 echo -e "::Internet::"
@@ -228,8 +228,6 @@ dpkg -l | grep -qw sabnzbdplus ||
 #	Synology Assistant installed via the custapps.sh
 dpkg -l | grep -qw transmission ||
          sudo apt-get install -y transmission                        # Transmission
-dpkg -l | grep -qw wireshark-qt ||
-         sudo apt-get install -y wireshark-qt                        # Wireshark
 dpkg -l | grep -qw zenmap || sudo apt-get install -y zenmap          # Zenmap
 
 echo -e "-------------------------------------------------------------------------"
@@ -258,8 +256,6 @@ dpkg -l | grep -qw gramps || sudo apt-get install -y gramps          # Gramps
 dpkg -l | grep -qw homebank || sudo apt-get install -y homebank      # Homebanking
 dpkg -l | grep	-qw planner || sudo apt-get install -y planner        # Planner
 dpkg -l | grep -qw texmaker ||  sudo apt-get install -y texmaker     # Texmaker
-dpkg -l | grep	-qw ttf-mscorefonts-installer ||
-         sudo apt-get install -y ttf-mscorefonts-installer           # ttf-mscorefonts-installer
 dpkg -l | grep	-qw vym || sudo apt-get install -y vym                # VYM - View Your Mind
 
 echo -e "-------------------------------------------------------------------------"
@@ -290,13 +286,6 @@ dpkg -l | grep -qw gqrx-sdr || sudo apt-get install -y gqrx-sdr      # GQRX
 dpkg -l | grep -qw gnome-boxes ||
          sudo apt-get install -y gnome-boxes                         # gnome-boxes
 #	VMware Workstation installed via the custapps.sh
-dpkg -l | grep -qw virtualbox ||
-         sudo apt-get install -y virtualbox                          # Virtualbox
-dpkg -l | grep -qw virtualbox-ext-pack ||
-         sudo apt-get install -y virtualbox-ext-pack                 # Virtualbox-Ext-Pack
-dpkg -l | grep -qw vde2 || sudo apt-get install -y vde2              # vde2
-dpkg -l | grep -qw virtualbox-guest-additions-iso ||
-         sudo apt-get install -y virtualbox-guest-additions-iso      # virtualbox-guest-additions-iso
 
 echo -e "-------------------------------------------------------------------------"
 echo -e "::Programming::"
