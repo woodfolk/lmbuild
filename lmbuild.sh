@@ -5,7 +5,7 @@ set -e
 # Name:			lmbuild.sh
 # Author:		Romano Woodfolk
 # Created:		February 16, 2020
-# Modified:		February 23, 2020 (110100100)
+# Modified:		February 24, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com 
 #---------------------------------------------------------------------------------#
@@ -85,7 +85,7 @@ else
 	echo -e ""
 	echo -e ""
 	echo -e "Now enjoy the ride"
-	sleep 2
+	sleep 3
 	echo -e ""; clear; echo -e ""                                     # clear Screen
 fi
 
@@ -106,13 +106,15 @@ echo -e "replacing your .bashrc file with a custom .bashrc file from ParrotSec O
 echo -e "---------------------------------------------------------------------------------"
 mv ~/.bashrc bashrc.old
 cp bashrc ~/.bashrc
-sleep 2
+sleep 3
 echo -e ""; clear; echo -e ""                                        # clear Screen
 
 echo -e "---------------------------------------------------------------------------------"
 echo -e " Updating the repository database..."
 echo -e "---------------------------------------------------------------------------------"
-sudo apt-get update -y && sudo apt-get full-upgrade -y && sudo apt-get dist-upgrade -y &&
+sudo apt-get -f install -y
+sudo apt-get update -y && sudo apt-get upgrade -y 
+sudo apt-get full-upgrade -y && sudo apt-get dist-upgrade -y
 sudo apt-get -f install -y && sudo apt-get autoremove
 echo -e ""; clear; echo -e ""                                        # clear Screen
 
@@ -140,7 +142,7 @@ echo -e " Utilities (System Tools/Accessories)"
 echo -e ""
 echo -e "---------------------------------------------------------------------------------"
 echo -e ""
-sleep 2
+sleep 3
 echo -e ""; clear; echo -e ""
 
 echo -e "---------------------------------------------------------------------------------"
