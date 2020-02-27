@@ -1,6 +1,6 @@
 # Linux Mint 19.3 Cinnamon Build
 
-This is my Link Mint Cinnamon Build Script. I wrote this script strictly for my pu and use, for the sole purpose of rebuilding my system(s) just in case. In cases were I receive a new computer, recycled computer or just because I feel the need to rebuild my computer. I can rebuild my system to my specifications via the use of this script. I've pulled ideas into this script from the following people including my finishbuild script...
+This is my Link Mint Cinnamon Build Script. I wrote this script strictly for my pu and use, for the sole purpose of rebuilding my system(s) just in case. In cases where I receive a new computer, recycled computer or just because I feel the need to rebuild my computer. I can rebuild my system to my specifications via the use of this script. I've pulled ideas into this script from the following people including my finishbuild script...
 
 **Erik Dubois** - https://github.com/erikdubois/Ultimate-Linux-Mint-19-Cinnamon
 
@@ -10,13 +10,13 @@ This is my Link Mint Cinnamon Build Script. I wrote this script strictly for my 
 
 **Romano Woodfolk** - https://github.com/woodfolk/finishbuild
 
-This scipt is free to use and to modify and as I have been warned, you are being warned. You run this script at your own risk. I take no responsibility to an harm to you system or data. Read through the script and edit way you want or don't want installed. I have to admit although there are ton of applications being installed, I practically live in a browser and should be running a chromebook.
+This script is free to use and to modify and as I have been warned, you are being warned. You run this script at your own risk. I take no responsibility for any harm to your system or data. Read through the script and edit it the way you want or don't want to be installed. I have to admit although there are a ton of applications being installed, I practically live in a browser and should be running a Chromebook.
 
 ![Imgur](https://i.imgur.com/nbSQcVX.png?1)
 
-## Download this github
+## Download this GitHub
 
-You can run any of these scripts by downloading the zip file from github. Go to the download folder and right-click to **Extract here**.
+You can run any of these scripts by downloading the zip file from Github. Go to the download folder and right-click to **Extract here**.
 Go inside the folder and right-click <b>in a blank space</b> to go to the terminal. Now your terminal is opened in this extracted folder.
 
 Or you can use the terminal and the git command
@@ -26,7 +26,7 @@ Or you can use the terminal and the git command
 
 ## Update your system
 
-First update/upgrade your system with mintupdate icon at bottom right or by running the following commands:
+First, update/upgrade your system with mintupdate icon at bottom right or by running the following commands:
 
 	sudo apt-get update -y
 	sudo apt-get upgrade -y
@@ -44,9 +44,9 @@ The installation scripts used to install software will be run via the terminal.
 	
 Do not forget to type "./" in front of the name.
 
-Some scripts call other scripts in the folder and should be keep together in the same folder, while others were written to run as standalone scripts. These script are located in the the "standalones" folder. Scripts located in the "options" folder are customizable scripts for interactive installs and configurations for specific users or usernames.
+Some scripts call other scripts in the folder and should be kept together in the same folder, while others were written to run as standalone scripts. These scripts are located in the "standalone" folder. Scripts located in the "options" folder are customizable scripts for interactive installs and configurations for specific users or usernames.
 
-Listed belew are the scripts located in the 'optional' folder. (Custom Configurations, Plugins, Themes and Icons]
+Listed below are the scripts located in the 'optional' folder. (Custom Configurations, Plugins, Themes and Icons]
 
 	install-arc-flatabulous-theme-v1.sh
 	install-conky-aureola-v1.sh
@@ -67,8 +67,8 @@ Other files.
 	TODO List												# Outline of things to do for project
 	bashrc													# ParrotOS .bashrc file Terminal
 	scipt-template.sh										# Script template file (read only)
-   my_cinnamon_setting									# My Cinnamon Settings
-   ...
+   my_cinnamon_setting									# My Cinnamon Settings
+   ...
 
 Listed below are the scripts located in the 'standalone' folder (PPA, GIT and Downloaded Installs).
 
