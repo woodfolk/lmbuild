@@ -49,7 +49,7 @@ dpkg -l | grep -qw mc || sudo apt-get install -y mc                  # mc (Midni
 dpkg -l | grep -qw meld || sudo apt-get install -y meld              # meld
 dpkg -l | grep -qw mpack || sudo apt-get install -y mpack            # mpack
 dpkg -l | grep -qw neofetch || sudo apt-get install -y neofetch      # neofetch
-ddpkg -l | grep -qw ntfs-3g || sudo apt-get install -y ntfs-3g       # ntfs-3g
+dpkg -l | grep -qw ntfs-3g || sudo apt-get install -y ntfs-3g        # ntfs-3g
 dpkg -l | grep -qw ntfs-config ||
          sudo apt-get install -y ntfs-config                         # ntfs-config
 dpkg -l | grep -qw network-manager-openconnect ||
