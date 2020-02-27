@@ -1,6 +1,6 @@
 # Linux Mint 19.3 Cinnamon Build
 
-This is my Link Mint Cinnamon Build Script. I wrote this script strictly for me, for the sole purpose of rebuilding my system just in case. Just in case I receive a new computer, recycled computer or just because, can rebuild my system to my specifications via the use of this script. I've pulled ideas into this script via the following people including my finishbuild script...
+This is my Link Mint Cinnamon Build Script. I wrote this script strictly for my pu and use, for the sole purpose of rebuilding my system(s) just in case. In cases were I receive a new computer, recycled computer or just because I feel the need to rebuild my computer. I can rebuild my system to my specifications via the use of this script. I've pulled ideas into this script from the following people including my finishbuild script...
 
 **Erik Dubois** - https://github.com/erikdubois/Ultimate-Linux-Mint-19-Cinnamon
 
@@ -21,24 +21,26 @@ Go inside the folder and right-click <b>in a blank space</b> to go to the termin
 
 Or you can use the terminal and the git command
 
-   sudo apt-get install -y git
-   git clone https://github.com/woodfolk/lmbuild
+	sudo apt-get install -y git
+	git clone https://github.com/woodfolk/lmbuild
 
 ## Update your system
 
 First update/upgrade your system with mintupdate icon at bottom right or by running the following commands:
 
-   sudo apt-get update -y
-   sudo apt-get upgrade -y
+	sudo apt-get update -y
+	sudo apt-get upgrade -y
 
 ## Software installation
 
 The installation scripts used to install software will be run via the terminal.
 
-   lmbuild.sh                          # Main Install Script
-   addrepos.sh                         # Adds PPAs additional repositories
-   addapps.sh                          # Install core use applications
-   custapps.sh                         # Install custom applications
+	lmbuild.sh									# Master Install Script
+	addrepos.sh									# Adds PPAs additional repositories
+	addapps.sh									# Install core use applications
+	custapps.sh									# Install custom applications
+	customconfigs.sh							# Custom Configurations Script (EDIT BEFORE USE)
+	gstreamer-plugins.sh						# Gstreamer and other plugins
 	
 Do not forget to type "./" in front of the name.
 
@@ -46,27 +48,26 @@ Some scripts call other scripts in the folder and should be keep together in the
 
 Listed belew are the scripts located in the 'optional' folder. (Custom Configurations, Plugins, Themes and Icons]
 
-   customconfigs.sh
-   gstreamer-plugins.sh 
-   install-arc-flatabulous-theme-v1.sh
-   install-conky-aureola-v1.sh
-   install-gtk-arc-theme-v1.sh
-   install-icons-sardi-extra-v1.sh
-   install-icons-sardi-v1.sh
-   install-icons-surfn-v1.sh
-   install-plank-themes-v1.sh
-   install-theme-arc-colora-collection-3.4.v1.sh
-   install-theme-arc-colora-collection-3.6.v1.sh
-   install-theme-mint-y-colora-collection-3.6-v1.sh
-   ...
+	install-arc-flatabulous-theme-v1.sh
+	install-conky-aureola-v1.sh
+	install-gtk-arc-theme-v1.sh
+	install-icons-sardi-extra-v1.sh
+	install-icons-sardi-v1.sh
+	install-icons-surfn-v1.sh
+	install-plank-themes-v1.sh
+	install-theme-arc-colora-collection-3.4.v1.sh
+	install-theme-arc-colora-collection-3.6.v1.sh
+	install-theme-mint-y-colora-collection-3.6-v1.sh
+	...
 
 Other files.
 
-   LICENSE                                      # GNU General Public License v2.0
-   README.md                                    # Readme File
-   TODO List                                    # Outline of things to do for project
-   bashrc                                       # ParrotOS .bashrc file Terminal
-   scipt-template.sh                            # Script template file (read only)
+	LICENSE													# GNU General Public License v2.0
+	README.md												# Readme File
+	TODO List												# Outline of things to do for project
+	bashrc													# ParrotOS .bashrc file Terminal
+	scipt-template.sh										# Script template file (read only)
+   my_cinnamon_setting									# My Cinnamon Settings
    ...
 
 Listed below are the scripts located in the 'standalone' folder (PPA, GIT and Downloaded Installs).
