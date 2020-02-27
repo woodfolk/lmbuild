@@ -15,7 +15,7 @@ set -e
 echo -e "-------------------------------------------------------------------------"
 echo -e "::Utilities and Core Applications::"
 echo -e "-------------------------------------------------------------------------"
-dpkg -l | grep -qw abc || sudo apt-get install -y abc                # abc example
+#dpkg -l | grep -qw abc || sudo apt-get install -y abc                # abc example
 dpkg -l | grep -qw \gcc || sudo apt-get install -y \gcc              # gcc
 dpkg -l | grep -qw \make || sudo apt-get install -y \make            # make
 dpkg -l | grep -qw linux-headers-$(uname -r) ||
