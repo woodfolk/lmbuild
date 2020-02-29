@@ -42,8 +42,8 @@ set -e
     USERNAME=""                                 # username
 # colors
     NORMAL=`echo "\033[m"`                      # ${NORMAL}
-    MENU=`echo "\033[36m"`                      # blue ${NORMAL}
-    NUMBER=`echo "\033[33m"`                    # yellow ${NORMAL}
+    BLUE=`echo "\033[36m"`                      # blue ${NORMAL}
+    YELLOW=`echo "\033[33m"`                    # yellow ${NORMAL}
     FGRED=`echo "\033[41m"`                     # red ${FGRED}
     RED_TEXT=`echo "\033[31m"`                  # ${RED_TEXT}
     ENTER_LINE=`echo "\033[33m"`                # ${COLOR}
@@ -102,11 +102,41 @@ sleep 2
 echo -e ""; clear; echo -e ""                                        # clear Screen
 
 echo -e "---------------------------------------------------------------------------------"
-echo -e "replacing your .bashrc file with a custom .bashrc file from ParrotSec OS...      "
+echo -e " Replacing your .bashrc file with a custom .bashrc file from ParrotSec OS...     "
 echo -e "---------------------------------------------------------------------------------"
 mv ~/.bashrc bashrc.old
 cp bashrc ~/.bashrc
 sleep 3
+echo -e ""; clear; echo -e ""                                        # clear Screen
+
+echo -e "---------------------------------------------------------------------------------"
+echo -e " Replacing the default cinnamon settings file with my_cinnamon_settings file "
+echo -e "---------------------------------------------------------------------------------"
+echo -e "${BLUE}#=================================================================================#"
+echo -e "# Backing up and restoring your cinnamon settings (dconf)"
+echo -e "# https://github.com/linuxmint/Cinnamon/wiki/Backing-up-and-restoring-your-cinnamon-settings-(dconf)"
+echo -e "# To backup from a terminal run:"
+echo -e "#"
+echo -e "# ${YELLOW}dconf dump /org/cinnamon/ > backup_of_my_cinnamon_settings${BLUE}"
+echo -e "#"
+echo -e "# save the backup_of_my_cinnamon_settings file somewhere for later"
+echo -e "#"
+echo -e "# To ${FGRED}reset${BLUE} to defaults:"
+echo -e "#"
+echo -e "# ${YELLOW}dconf reset -f /org/cinnamon/${BLUE}"
+echo -e "#"
+echo -e "# Note, cinnamon may freeze or crash doing this to restore all your settings:"
+echo -e "#"
+echo -e "# ${YELLOW}dconf load /org/cinnamon/ < backup_of_my_cinnamon_settings${BLUE}"
+echo -e "#"
+echo -e "# Cinnamon may freeze/crash after this (recommend at least logging out/back in)"
+echo -e "#=================================================================================#${NORMAL}"
+cp my_cinnamon_settings ~/my_cinnamon_settings
+echo -e " Backing up dault cinnamon settings"
+dconf dump /org/cinnamon/ > backup_of_my_cinnamon_settings
+echo -e " Setting custom cinnamon settings from the ${YELLOW}my_cinnamon_settings${NORMAL} file "
+dconf load /org/cinnamon/ < ~/my_cinnamon_settings
+sleep 2
 echo -e ""; clear; echo -e ""                                        # clear Screen
 
 echo -e "---------------------------------------------------------------------------------"
@@ -199,7 +229,7 @@ if [[ "$A" == "Y"  ||  "$A" == "y"||  "$A" == "Yes" ||  "$A" == "yes"  ]] ;
       echo -e "---------------------------------------------------------------------------------"
       sleep 2
       echo -e ""; clear; echo -e ""
-      sh /optional/customconfigs.sh
+      sh customconfigs.sh
    else
       echo -e ""; clear; echo -e ""                                        # clear Screen
       echo -e " You can run the customconfigs.sh at anytime. It is recommended that you edit the script"
@@ -230,11 +260,6 @@ echo -e "-----------------------------------------------------------------------
 # dconf load /org/cinnamon/ < backup_of_my_cinnamon_settings
 #
 # Cinnamon may freeze crash after this (recommend at least logging out/back in)
-dconf dump /org/cinnamon/ > backup_of_my_cinnamon_settings
-dconf load /org/cinnamon/ < my_cinnamon_settings
-sleep 2
-echo -e ""; clear; echo -e ""                                        # clear Screen
-
 echo -e "---------------------------------------------------------------------------------"
 echo -e " Installs complete...."
 echo -e "---------------------------------------------------------------------------------"
