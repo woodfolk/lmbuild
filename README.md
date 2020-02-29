@@ -35,12 +35,12 @@ First, update/upgrade your system with mintupdate icon at bottom right or by run
 
 The installation scripts used to install software will be run via the terminal.
 
-	lmbuild.sh									# Master Install Script
-	addrepos.sh									# Adds PPAs additional repositories
-	addapps.sh									# Install core use applications
-	custapps.sh									# Install custom applications
-	customconfigs.sh							# Custom Configurations Script (EDIT BEFORE USE)
-	gstreamer-plugins.sh						# Gstreamer and other plugins
+	lmbuild.sh                          # Master Install Script
+	addrepos.sh                         # Adds PPAs additional repositories
+	addapps.sh                          # Install core use applications
+	custapps.sh                         # Install custom applications
+	customconfigs.sh                    # Custom Configurations Script (EDIT BEFORE USE)
+	gstreamer-plugins.sh                # Gstreamer and other plugins
 	
 Do not forget to type "./" in front of the name.
 
@@ -62,63 +62,63 @@ Listed below are the scripts located in the 'optional' folder. (Custom Configura
 
 Other files.
 
-	LICENSE													# GNU General Public License v2.0
-	README.md												# Readme File
-	TODO List												# Outline of things to do for project
-	bashrc													# ParrotOS .bashrc file Terminal
-	scipt-template.sh										# Script template file (read only)
-   my_cinnamon_setting									# My Cinnamon Settings
+	LICENSE                                # GNU General Public License v2.0
+	README.md                              # Readme File
+	TODO List                              # Outline of things to do for project
+	bashrc                                 # ParrotOS .bashrc file Terminal
+	scipt-template.sh                      # Script template file (read only)
+	my_cinnamon_setting                    # My Cinnamon Settings
    ...
 
 Listed below are the scripts located in the 'standalone' folder (PPA, GIT and Downloaded Installs).
 
-   app-ppa-install-atom-v*.sh                   # Atom
-   app-ppa-install-audiorecorder-v*.sh          # Audio-Recorder
-   app-ppa-install-brackets-v*.sh               # Brackets
-   app-ppa-install-brave-v*.sh                  # Brave Web Browser
-   app-ppa-install-chrome-v*.sh                 # Chrome Web Browser
-   app-ppa-install-cinelerra-v*.sh              # Cinelerra
-   app-ppa-install-code-v*.sh                   # Microsoft Visual Studio Code
-   app-ppa-install-docker-v*.sh                 # Docker
-   app-ppa-install-etcher-v*.sh                 # Etcher
-   app-ppa-install-glances-v*.sh                # Glances
-   app-ppa-install-hardcodefixer-v*.sh          # Hardcodefixer
-   app-ppa-install-kodi-v*.sh                   # Kodi
-   app-ppa-install-kvm-v*.sh                    # KVM
-   app-ppa-install-lmt-v*.sh                    # Laptop Mode Tools
-   app-ppa-install-mumbler-v*.sh                # Mumbler
-   app-ppa-install-neofetch-v*.sh               # Neofetch
-   app-ppa-install-notepadqq-v*.sh              # Notepadqq
-   app-ppa-install-oceanaudio-v*.sh             # Ocean Audio
-   app-ppa-install-peek-v*.sh                   # Peek
-   app-ppa-install-pia-v*.sh                    # PIA
-   app-ppa-install-pithos-v*.sh                 # Pithos
-   app-ppa-install-powershell-v*.sh             # Powershell
-   app-ppa-install-python-v*.sh                 # Python
-   app-ppa-install-redshift-v*.sh               # Redshift
-   app-ppa-install-sabnzb-v*.sh                 # sabNZB
-   app-ppa-install-screenkey-v*.sh              # Screenkey
-   app-ppa-install-simplenote-v*.sh             # Simplenote
-   app-ppa-install-simplescreenrecorder-v*.sh   # Simplescreenrecorder
-   app-ppa-install-skype-v*.sh                  # Skype
-   app-ppa-install-slack-v*.sh                  # Slack
-   app-ppa-install-spotify-v*.sh                # Spotify
-   app-ppa-install-stacer-v*.sh                 # Stacer
-   app-ppa-install-sublime-v*.sh                # Sublime Text Editor
-   app-ppa-install-synology-v*.sh               # Synology
-   app-ppa-install-teamviewer-v*.sh             # Teamviewer
-   app-ppa-install-telegram-v*.sh               # Telegram
-   app-ppa-install-tlp-v*.sh                    # TLP
-   app-ppa-install-unetbootin-v*.sh             # Unetbootin
-   app-ppa-install-virtualbox-v*.sh             # Virtualbox
-   app-ppa-install-vivaldi-snapshot-v*.sh       # Vivaldi-Snapshot
-   app-ppa-install-vivaldi-stable-v*.sh         # Vivaldi-Stable
-   app-ppa-install-vivaldi-v*.sh                # Vivaldi Web Browser(s)
-   app-ppa-install-zoom-v*.sh                   # Zoom
-   app-ppa-install-zsh-v1.sh                    # zsh
-   ...
+	app-ppa-install-atom-v*.sh                   # Atom
+	app-ppa-install-audiorecorder-v*.sh          # Audio-Recorder
+	app-ppa-install-brackets-v*.sh               # Brackets
+	app-ppa-install-brave-v*.sh                  # Brave Web Browser
+	app-ppa-install-chrome-v*.sh                 # Chrome Web Browser
+	app-ppa-install-cinelerra-v*.sh              # Cinelerra
+	app-ppa-install-code-v*.sh                   # Microsoft Visual Studio Code
+	app-ppa-install-docker-v*.sh                 # Docker
+	app-ppa-install-etcher-v*.sh                 # Etcher
+	app-ppa-install-glances-v*.sh                # Glances
+	app-ppa-install-hardcodefixer-v*.sh          # Hardcodefixer
+	app-ppa-install-kodi-v*.sh                   # Kodi
+	app-ppa-install-kvm-v*.sh                    # KVM
+	app-ppa-install-lmt-v*.sh                    # Laptop Mode Tools
+	app-ppa-install-mumbler-v*.sh                # Mumbler
+	app-ppa-install-neofetch-v*.sh               # Neofetch
+	app-ppa-install-notepadqq-v*.sh              # Notepadqq
+	app-ppa-install-oceanaudio-v*.sh             # Ocean Audio
+	app-ppa-install-peek-v*.sh                   # Peek
+	app-ppa-install-pia-v*.sh                    # PIA
+	app-ppa-install-pithos-v*.sh                 # Pithos
+	app-ppa-install-powershell-v*.sh             # Powershell
+	app-ppa-install-python-v*.sh                 # Python
+	app-ppa-install-redshift-v*.sh               # Redshift
+	app-ppa-install-sabnzb-v*.sh                 # sabNZB
+	app-ppa-install-screenkey-v*.sh              # Screenkey
+	app-ppa-install-simplenote-v*.sh             # Simplenote
+	app-ppa-install-simplescreenrecorder-v*.sh   # Simplescreenrecorder
+	app-ppa-install-skype-v*.sh                  # Skype
+	app-ppa-install-slack-v*.sh                  # Slack
+	app-ppa-install-spotify-v*.sh                # Spotify
+	app-ppa-install-stacer-v*.sh                 # Stacer
+	app-ppa-install-sublime-v*.sh                # Sublime Text Editor
+	app-ppa-install-synology-v*.sh               # Synology
+	app-ppa-install-teamviewer-v*.sh             # Teamviewer
+	app-ppa-install-telegram-v*.sh               # Telegram
+	app-ppa-install-tlp-v*.sh                    # TLP
+	app-ppa-install-unetbootin-v*.sh             # Unetbootin
+	app-ppa-install-virtualbox-v*.sh             # Virtualbox
+	app-ppa-install-vivaldi-snapshot-v*.sh       # Vivaldi-Snapshot
+	app-ppa-install-vivaldi-stable-v*.sh         # Vivaldi-Stable
+	app-ppa-install-vivaldi-v*.sh                # Vivaldi Web Browser(s)
+	app-ppa-install-zoom-v*.sh                   # Zoom
+	app-ppa-install-zsh-v1.sh                    # zsh
+	...
 
-   app-snap-install-packages-v1.sh              # SnapCraft and SNAP Packages
+	app-snap-install-packages-v1.sh              # SnapCraft and SNAP Packages
 
 ## List of Installes Software
 
