@@ -1,6 +1,6 @@
 # Linux Mint 19.3 Cinnamon Build
 
-This is my Link Mint Cinnamon Build Script. I wrote this script strictly for my pu and use, for the sole purpose of rebuilding my system(s) just in case. In cases where I receive a new computer, recycled computer or just because I feel the need to rebuild my computer. I can rebuild my system to my specifications via the use of this script. I've pulled ideas into this script from the following people including my finishbuild script...
+This is my Linux Mint Cinnamon Build Script. I wrote this script strictly for my personal use to be used for the sole purpose of rebuilding my system(s) just in case... in cases where I receive a new computer, recycled computer or just because I feel the need to rebuild my computer. This script assists me in rebuild my system to my specifications. I've pulled ideas into this script from the following people including my own finishbuild script...
 
 **Erik Dubois** - https://github.com/erikdubois/Ultimate-Linux-Mint-19-Cinnamon
 
@@ -10,7 +10,7 @@ This is my Link Mint Cinnamon Build Script. I wrote this script strictly for my 
 
 **Romano Woodfolk** - https://github.com/woodfolk/finishbuild
 
-This script is free to use and to modify and as I have been warned, you are being warned. You run this script at your own risk. I take no responsibility for any harm to your system or data. Read through the script and edit it the way you want or don't want to be installed. I have to admit although there are a ton of applications being installed, I practically live in a browser and should be running a Chromebook.
+This script is free to use and free to modify and free to share. I bare no blame from any damage caused by script, blah, blah, blah I have been warned you, you are being warned. You run this script at your own risk. I take no responsibility for any harm to your system or data. Read through the script and edit it the way you want or don't want to be installed. I have to admit although there are a ton of applications being installed, I practically live in a browser and should be running a Chromebook. Real props you should look at Erik DuBois Ultimate-Linux-Mint-19-Cinnamon script, in my opinion he as a superior script.
 
 ![Imgur](https://i.imgur.com/nbSQcVX.png?1)
 
@@ -23,7 +23,10 @@ Or you can use the terminal and the git command
 
 	sudo apt-get install -y git
 	git clone https://github.com/woodfolk/lmbuild
+	cd lmbuild
+	sudo ./lmbuild.sh
 
+But I advise that you edit the customconfigs.sh to use your username.
 ## Update your system
 
 First, update/upgrade your system with mintupdate icon at bottom right or by running the following commands:
@@ -62,12 +65,12 @@ Listed below are the scripts located in the 'optional' folder. (Custom Configura
 
 Other files.
 
-	LICENSE                                # GNU General Public License v2.0
-	README.md                              # Readme File
-	TODO List                              # Outline of things to do for project
-	bashrc                                 # ParrotOS .bashrc file Terminal
-	scipt-template.sh                      # Script template file (read only)
-	my_cinnamon_setting                    # My Cinnamon Settings
+	LICENSE                                   # GNU General Public License v2.0
+	README.md                                 # Readme File
+	TODO List                                 # Outline of things to do for project
+	bashrc                                    # ParrotOS .bashrc file Terminal
+	scipt-template.sh                         # Script template file (read only)
+	my_cinnamon_setting                       # My Cinnamon Settings
    ...
 
 Listed below are the scripts located in the 'standalone' folder (PPA, GIT and Downloaded Installs).
@@ -123,55 +126,55 @@ Listed below are the scripts located in the 'standalone' folder (PPA, GIT and Do
 ## List of Installes Software
 
 ::Utilities and Core Applications::
-   gcc
-   Terminator
-   Tilda
-   dvdisaster
-   GDebi Package Installer
-   Grsync
-   HTOP
-   Smb4k
-   git
-   curl
-   wget
-   synaptic
-   cabextract
-   dconf-cli
-   dconf-editor
-   p7zip-rar
-   p7zip-full
-   rar
-   unace
-   unrar
-   uudeview
-   sharutils
-   synapse
-   xrdp
-   zip
-   unzip
+   gcc,
+   Terminator,
+   Tilda,
+   dvdisaster,
+   GDebi Package Installer,
+   Grsync,
+   HTOP,
+   Smb4k,
+   git,
+   curl,
+   wget,
+   synaptic,
+   cabextract,
+   dconf-cli,
+   dconf-editor,
+   p7zip-rar,
+   p7zip-full,
+   rar,
+   unace,
+   unrar,
+   uudeview,
+   sharutils,
+   synapse,
+   xrdp,
+   zip,
+   unzip,
    openconnect
 
 
 ::Accessories::
-   Multisystem
-   ConvertAll
-   Gip IP Addresss Calculator
-   KeePassXC
-   GPA
-   UNetbootin
-   Ecther
+   Multisystem,
+   ConvertAll,
+   Gip IP Addresss Calculator,
+   KeePassXC,
+   GPA,
+   UNetbootin,
+   Ecther,
    ClamTK
 
 
 ::Chrome Apps::
-   Chrome RDP
-   Google Hangouts
-   Google Play Music
+   Chrome RDP,
+   Google Hangouts,
+   Google Play Music,
    Videostream for Google Chromecast
 
 
 ::Education::
-   GNS3
+   GNS3,
    Stellarium
 
 
@@ -179,109 +182,109 @@ Listed below are the scripts located in the 'standalone' folder (PPA, GIT and Do
 
 
 ::Graphics::
-   Blender
-   Inkscape
-   Krita
-   Darktable
-   Scribus
-   Dia
-   Sweet Home 3D
-   Gpick
+   Blender,
+   Inkscape,
+   Krita,
+   Darktable,
+   Scribus,
+   Dia,
+   Sweet Home 3D,
+   Gpick,
    Shotwell
 
 
 ::Internet::
-   Google Chrome Browser
-   Firefox Web Browser
-   Vivaldi
-   Brave Browser
-   Remmina
-   Remote Desktop Viewer
-   Teamviewer 
-   Putty SSH Client
-   FileZilla
-   SSL/SSH VNC Viewer
-   TOR Browser
-   TOR Browser Laucher Settings
-   Onion Circuit
-   OnionShare
-   Telegram Desktop
-   Pidgin Internet Messenger
-   Hex Chat
-   XChat IRC
-   Skype
-   Slack
-   Transmission
-   Synology Assistant
-   EtherApe
-   Wireshark
-   Zenmap
+   Google Chrome Browser,
+   Firefox Web Browser,
+   Vivaldi,
+   Brave Browser,
+   Remmina,
+   Remote Desktop Viewer,
+   Teamviewer ,
+   Putty SSH Client,
+   FileZilla,
+   SSL/SSH VNC Viewer,
+   TOR Browser,
+   TOR Browser Laucher Settings,
+   Onion Circuit,
+   OnionShare,
+   Telegram Desktop,
+   Pidgin Internet Messenger,
+   Hex Chat,
+   XChat IRC,
+   Skype,
+   Slack,
+   Transmission,
+   Synology Assistant,
+   EtherApe,
+   Wireshark,
+   Zenmap,
    SABnzbd+
 
 
 ::Office::
-   LibreOffice
-   LibreOffice Base
-   LibreOffice Calc
-   LibreOffice Draw
-   LibreOffice Impress
-   LibreOffice Math
-   LibreOffice Writer
-   Document Viewer
-   Calibre
-   E-book Editor
-   gLabels
-   Gramps
-   GnuCash
-   Homebanking
-   Planner
-   Texmaker
+   LibreOffice,
+   LibreOffice Base,
+   LibreOffice Calc,
+   LibreOffice Draw,
+   LibreOffice Impress,
+   LibreOffice Math,
+   LibreOffice Writer,
+   Document Viewer,
+   Calibre,
+   E-book Editor,
+   gLabels,
+   Gramps,
+   GnuCash,
+   Homebanking,
+   Planner,
+   Texmaker,
    VYM - View Your Mind
 
 
 ::Other (Electronics, Hamradio, and Virtualization)::
-   Arduino IDE
-   Eeschema
-   Fritzing
-   GerbView
-   LibreCAD
-   KiCad
-   PCB Calculator
-   PCBNew
-   GNU Radio Companion
-   CHIRP
-   GQRX
-   VMware Workstation
+   Arduino IDE,
+   Eeschema,
+   Fritzing,
+   GerbView,
+   LibreCAD,
+   KiCad,
+   PCB Calculator,
+   PCBNew,
+   GNU Radio Companion,
+   CHIRP,
+   GQRX,
+   VMware Workstation,
    Virtualbox
 
 
 ::Programming::
-   gEdit Text Editor
-   Geany
-   VS Code
-   Bluefish Editor
-   GVim
+   gEdit Text Editor,
+   Geany,
+   VS Code,
+   Bluefish Editor,
+   GVim,
    Notepad+
 
 
 ::Sound & Video::
-   Audacity
-   Brasero
-   Cheese
-   dvd::rip
-   dvdauthor
-   EasyTAG
-   ffmpeg
-   HandBrake
-   Kazam
-   KDEnlive
-   Kino
-   MakeMKV
-   MPV Media Player
-   OBS
-   OpenShot Video Editor
-   Simplescreenrecorder
-   Sound Juicer
+   Audacity,
+   Brasero,
+   Cheese,
+   dvd::rip,
+   dvdauthor,
+   EasyTAG,
+   ffmpeg,
+   HandBrake,
+   Kazam,
+   KDEnlive,
+   Kino,
+   MakeMKV,
+   MPV Media Player,
+   OBS,
+   OpenShot Video Editor,
+   Simplescreenrecorder,
+   Sound Juicer,
    VLC Media Player
 
 
