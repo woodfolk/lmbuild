@@ -5,7 +5,7 @@ set -e
 # Name:			addapps.sh
 # Author:		Romano Woodfolk
 # Created:		February 16, 2020
-# Modified:		February 25, 2020 (110100100)
+# Modified:		March 02, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -237,7 +237,7 @@ dpkg -l | grep -qw libreoffice ||
          sudo apt-get install -y libreoffice                         # LibreOffice
 dpkg -l | grep -qw libreoffice-base ||
          sudo apt-get install -y libreoffice-base                    # LibreOffice Base
-pkg -l | grep -qw libreoffice-calc ||
+dpkg -l | grep -qw libreoffice-calc ||
          sudo apt-get install -y libreoffice-calc                    # LibreOffice Calc
 dpkg -l | grep -qw libreoffice-draw ||
          sudo apt-get install -y libreoffice-draw                    # LibreOffice Draw
@@ -341,3 +341,4 @@ sudo apt-get install -f
 #***************************************************************************#
 # End of addapps.sh script
 #***************************************************************************#
+exit $?

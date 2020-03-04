@@ -5,7 +5,7 @@ set -e
 # Name:			lmbuild.sh
 # Author:		Romano Woodfolk
 # Created:		February 16, 2020
-# Modified:		February 25, 2020 (110100100)
+# Modified:		March 02, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -53,6 +53,32 @@ set -e
 #=================================================================================#
 # Function Definitions                                                            #
 #=================================================================================#
+funcUserInfo () {
+	echo -e ""; clear; echo -e ""    										# clear Screen
+	echo -e "Enter Your Name: \"i.e. First Last\" "
+	read NAME
+	echo -e "Enter username: "
+	read USERNAME
+	echo -e ""; clear; echo -e ""
+	echo -e "Your Name is: ${MENU}$NAME${RESET} "
+	echo -e "Your Username: ${MENU}$USERNAME${RESET} "
+	echo -e "This will be the name and user account used to configure applications, "
+	echo -e "profiles and accounts. Do you want to continue using:"
+	echo -e "${MENU}$NAME${RESET} and ${MENU}$USERNAME${RESET}? \"${RED_TEXT}Y${RESET}\" = Continue \"${RED_TEXT}N${RESET}\" = Re-Enter"
+	read A
+    if [[ "$A" == "Y"  ||  "$A" == "y"||  "$A" == "Yes" ||  "$A" == "yes"  ]] ;
+    then
+        echo -e ""
+        clear
+        echo -e ""
+        echo -e "Great, I will be using ${MENU}$NAME${RESET} as your  name and"
+        echo -e "${MENU}$USERNAME${RESET} as your account for all configurations..."
+    else
+        echo -e ""
+        funcUserInfo
+    fi
+	sleep 2
+}
 
 #=================================================================================#
 # Script Begins Here 											                  			 #
@@ -101,11 +127,17 @@ echo -e "-----------------------------------------------------------------------
 sleep 2
 echo -e ""; clear; echo -e ""                                        # clear Screen
 
+funcUserInfo
+
 echo -e "---------------------------------------------------------------------------------"
 echo -e " Replacing your .bashrc file with a custom .bashrc file from ParrotSec OS...     "
 echo -e "---------------------------------------------------------------------------------"
-mv ~/.bashrc bashrc.old
+mv ~/.bashrc ~/bashrc.old
 cp bashrc ~/.bashrc
+echo -e "changing file access on .bashrc file"
+cp bashrc ~/.bashrc
+sudo chown $USERNAME:$USERNAME ~/.bashrc ~/bashrc.old
+chmod 755 ~/.bashrc ~/bashrc.old
 sleep 3
 echo -e ""; clear; echo -e ""                                        # clear Screen
 
@@ -135,10 +167,12 @@ echo -e "${BLUE}#===============================================================
 echo -e "coping my_cinnamon_settings file to $HOME "
 cp my_cinnamon_settings ~/my_cinnamon_settings
 echo -e "changing file access on my_cinnamon_settings"
-chown $USER:$USER ~/my_cinnamon_settings 
+sudo chown $USERNAME:$USERNAME ~/my_cinnamon_settings
 chmod 755 ~/my_cinnamon_settings
 echo -e " Backing up dault cinnamon settings"
-dconf dump /org/cinnamon/ > backup_of_my_cinnamon_settings
+dconf dump /org/cinnamon/ > ~/backup_of_my_cinnamon_settings
+sudo chown $USERNAME:$USERNAME ~/backup_of_my_cinnamon_settings
+chmod 755 ~/backup_of_my_cinnamon_settings
 echo -e " Setting custom cinnamon settings from the ${YELLOW}my_cinnamon_settings${NORMAL} file "
 dconf load /org/cinnamon/ < ~/my_cinnamon_settings
 sleep 2
@@ -276,4 +310,4 @@ exit
 #=================================================================================#
 #dpkg -l | grep -qw xyz || sudo apt-get install -y xyz               # xyz
 #cd /tmp && wget -q
-
+exit $?

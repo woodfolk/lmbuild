@@ -5,7 +5,7 @@ set -e
 # Name:			gstreamer-plugins.sh
 # Author:		Romano Woodfolk
 # Created:		February 16, 2020
-# Modified:		February 21, 2020 (110100100)
+# Modified:		March 02, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -59,5 +59,6 @@ dpkg -l | grep -qw libdvdcss2 ||
          sudo apt-get install -y libdvdcss2                          # libdvdcss2
 sudo apt-get install -f
 echo -e "-------------------------------------------------------------------------"
-echo -e " GStreamer plugins and libraries installed                      "
+echo -e " GStreamer plugins and libraries installed                               "
 echo -e "-------------------------------------------------------------------------"
+exit $?

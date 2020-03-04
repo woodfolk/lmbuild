@@ -5,7 +5,7 @@ set -e
 # Name:			addrepos.sh
 # Author:		Romano Woodfolk
 # Created:		February 16, 2020
-# Modified:		February 25, 2020 (110100100)
+# Modified:		March 02, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -22,7 +22,6 @@ sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu bionic-updates mai
 sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu bionic-backports main restricted universe multiverse"
 
 sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu/ bionic-security main restricted universe multiverse"
-sudo add-apt-repository "deb http://archive.canonical.com/ubuntu/ bionic partner"
 
 echo -e "-------------------------------------------------------------------------"
 echo -e "::Additional Repositories and Personal Package Archives (PPA)::"
@@ -35,18 +34,17 @@ echo -e "-----------------------------------------------------------------------
 sudo add-apt-repository -y ppa:audio-recorder/ppa
 
 
-# Google Chrome Web Browser
+# Google Chrome Web Browser #FIX
 # Install Google Chrome Web Browser
 # https://www.linuxbabe.com/ubuntu/install-google-chrome-ubuntu-18-04-lts
-echo -e "-------------------------------------------------------------------------"
-echo -e " Adding Google Chrome Repository...                                     "
-echo -e "-------------------------------------------------------------------------"
-sudo add-apt-repository -y 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main'
-echo -e "-------------------------------------------------------------------------"
-echo -e " Downloading Google Chrome Key...                                       "
-echo -e "-------------------------------------------------------------------------"
-wget -qO- https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-
+# echo -e "-------------------------------------------------------------------------"
+# echo -e " Adding Google Chrome Repository...                                     "
+# echo -e "-------------------------------------------------------------------------"
+# sudo add-apt-repository -y 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main'
+# echo -e "-------------------------------------------------------------------------"
+# echo -e " Downloading Google Chrome Key...                                       "
+# echo -e "-------------------------------------------------------------------------"
+# wget -qO- https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 
 
 # Brave Web Browser
@@ -158,3 +156,4 @@ echo -e "-----------------------------------------------------------------------
 echo -e "| additional repositories added                                  |"
 echo -e "-------------------------------------------------------------------------"
 sudo apt-get update -y
+exit $?
