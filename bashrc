@@ -104,3 +104,11 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+############################# RMW 2020/03/05 #########################
+# Referenc:
+# https://stackabuse.com/how-to-permanently-set-path-in-linux/
+######################################################################
+#
+PATH=$PATH:/home/$USER/bin/         # adding user's /bin/ to the $PATH
+#
+############################# 2020/03/05 RMW #########################
