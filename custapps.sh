@@ -5,7 +5,7 @@ set -e
 # Name:			custapps.sh
 # Author:		Romano Woodfolk
 # Created:		February 16, 2020
-# Modified:		March 02, 2020 (110100100)
+# Modified:		March 06, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -214,22 +214,6 @@ sudo ln -s /opt/Telegram/Telegram /usr/local/bin/telegram-desktop
 sudo apt-get install -f
 echo -e "-------------------------------------------------------------------------"
 echo -e " Telegram Installed		                          "
-echo -e "-------------------------------------------------------------------------"
-sleep 2
-echo -e ""; clear; echo -e ""														# clear Screen
-
-
-# VMware Workstation 15
-# (https://www.linuxbuzz.com/install-vmware-workstation-ubuntu-linuxmint/)
-echo -e "-------------------------------------------------------------------------"
-echo -e " Installing VMware Workstation		                          "
-echo -e "-------------------------------------------------------------------------"														# clear Screen
-wget -O ~/vmware.bin https://www.vmware.com/go/getWorkstation-linux
-sudo chmod +x vmware.bin
-sudo ./vmware.bin
-sudo apt-get install -f
-echo -e "-------------------------------------------------------------------------"
-echo -e " VMware Workstation Installed		                          "
 echo -e "-------------------------------------------------------------------------"
 sleep 2
 echo -e ""; clear; echo -e ""														# clear Screen
