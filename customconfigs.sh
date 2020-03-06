@@ -5,9 +5,9 @@ set -e
 # Name:			customconfigs.sh
 # Author:		Romano Woodfolk
 # Created:		February 17, 2020
-# Modified:		March 02, 2020 (110100100)
+# Modified:		March 06, 2020 (110100100)
 # Version:		1.0.0
-# Website: 		http://www.romanowoodfolk.com 
+# Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
 # Comments: This script contains the installation commands for Linux Mint 19.3    #
 # “Tricia” Cinnamon Edition an ubuntu based distributions.                        #
@@ -28,6 +28,21 @@ echo -e ""; clear; echo -e ""														# clear Screen
 echo -e "-------------------------------------------------------------------------"
 echo -e "..configuring system settings...                                  "
 echo -e "-------------------------------------------------------------------------"
+
+#=================================================================================#
+# GNURADIO
+#=================================================================================#
+# Fixing xml Error
+#---------------------------------------------------------------------------------#
+# Parse error during gnuradio installation
+#
+# https://bugs.launchpad.net/ubuntu/+source/gnuradio/+bug/1769432
+#
+if [ -f "/usr/share/mime/packages/gnuradio.xml" ]
+then
+ sudo rm /usr/share/mime/packages/gnuradio.xml
+ sudo ln -s /usr/share/gnuradio/grc/freedesktop/gnuradio-grc.xml /usr/share/mime/packages/gnuradio.xml
+fi
 
 #=================================================================================#
 # Multisystem
@@ -59,7 +74,7 @@ sudo /usr/sbin/usermod -a -G adm "$SUDO_USER"
 # VDE is a virtual switch that can connect multiple virtual machines together,
 # both local and remote VirtualBox Guest Additions ISO guest additions iso image
 # for VirtualBox
-# 
+#
 # Adding users to vboxusers group
 echo -e ""; clear; echo -e ""                                     # clear Screen
 echo -e "-------------------------------------------------------------------------"

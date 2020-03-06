@@ -209,8 +209,13 @@ echo -e ""; clear; echo -e ""														# clear Screen
 echo -e "-------------------------------------------------------------------------"
 echo -e " Installing Telegram..."
 echo -e "-------------------------------------------------------------------------"
-cd /tmp && wget -O- https://telegram.org/dl/desktop/linux | sudo tar xJ -C /opt/
-sudo ln -s /opt/Telegram/Telegram /usr/local/bin/telegram-desktop
+if [ -f "/opt/Telegram" ]
+then
+        cd /tmp && wget -O- https://telegram.org/dl/desktop/linux | sudo tar xJ -C /opt/
+        sudo ln -s /opt/Telegram/Telegram /usr/local/bin/telegram-desktop
+else
+        echo -e "Telegram Desktop is already installed"
+fi
 sudo apt-get install -f
 echo -e "-------------------------------------------------------------------------"
 echo -e " Telegram Installed		                          "
