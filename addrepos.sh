@@ -5,7 +5,7 @@ set -e
 # Name:			addrepos.sh
 # Author:		Romano Woodfolk
 # Created:		February 16, 2020
-# Modified:		March 02, 2020 (110100100)
+# Modified:		March 06, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
@@ -34,19 +34,6 @@ echo -e "-----------------------------------------------------------------------
 sudo add-apt-repository -y ppa:audio-recorder/ppa
 
 
-# Google Chrome Web Browser #FIX
-# Install Google Chrome Web Browser
-# https://www.linuxbabe.com/ubuntu/install-google-chrome-ubuntu-18-04-lts
-# echo -e "-------------------------------------------------------------------------"
-# echo -e " Adding Google Chrome Repository...                                     "
-# echo -e "-------------------------------------------------------------------------"
-# sudo add-apt-repository -y 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main'
-# echo -e "-------------------------------------------------------------------------"
-# echo -e " Downloading Google Chrome Key...                                       "
-# echo -e "-------------------------------------------------------------------------"
-# wget -qO- https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-
-
 # Brave Web Browser
 # Adding Brave Web Browser Repository
 # http://ubuntuhandbook.org/index.php/2018/12/how-to-install-brave-web-browser-in-ubuntu-linux-mint/
@@ -65,7 +52,7 @@ sudo sh -c 'echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.co
 echo -e "-------------------------------------------------------------------------"
 echo -e " Download the Microsoft repository GPG keys"
 echo -e "-------------------------------------------------------------------------"
-wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
+cd /tmp && wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
 echo -e "-------------------------------------------------------------------------"
 echo -e "Register the Microsoft repository GPG keys"
 echo -e "-------------------------------------------------------------------------"
