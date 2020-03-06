@@ -109,6 +109,6 @@ fi
 # https://stackabuse.com/how-to-permanently-set-path-in-linux/
 ######################################################################
 #
-PATH=$PATH:/home/$USER/bin/         # adding user's /bin/ to the $PATH
+PATH=$PATH:/home/woodfolk/bin/         # adding user's /bin/ to the $PATH
 #
 ############################# 2020/03/05 RMW #########################

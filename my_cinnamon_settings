@@ -1,76 +1,162 @@
 [/]
-extension-cache-updated=1548773304
+extension-cache-updated=1583318067
 desktop-effects-unmaximize-transition='easeNone'
 desktop-effects-maximize-transition='easeInExpo'
-applet-cache-updated=1549398277
+applet-cache-updated=1583368346
+workspace-osd-visible=true
 desktop-effects-map-effect='traditional'
-workspace-osd-duration=400
+command-history=['r']
+hotcorner-layout=['expo:false:50', 'scale:false:0', 'scale:false:0', 'desktop:false:0']
 desktop-effects-close-effect='traditional'
-enabled-desklets=@as []
+workspace-osd-duration=400
 desktop-effects-unmaximize-time=100
-panel-zone-icon-sizes='[{"panelId": 1, "left": 0, "center": 0, "right": 0}]'
+enabled-desklets=@as []
 desktop-effects-map-time=100
+panel-zone-icon-sizes='[{"panelId":1,"left":0,"center":0,"right":0},{"left":0,"center":0,"right":0,"panelId":3}]'
 desktop-effects-minimize-effect='traditional'
 app-menu-label='Menu'
-panels-height=['1:27']
-next-applet-id=53
+desklet-snap-interval=25
+panel-zone-text-sizes='[{"panelId":1,"left":0,"center":0,"right":0},{"left":0,"center":0,"right":0,"panelId":3}]'
+panels-height=['1:20', '2:20', '3:20']
+next-applet-id=77
 panel-launchers=['DEPRECATED']
 desktop-effects-map-transition='easeOutQuad'
+desklet-decorations=2
 desktop-effects-unmaximize-effect='none'
-panels-enabled=['1:0:top']
-desktop-effects-maximize-time=100
+panels-enabled=['1:1:top', '3:1:bottom']
 desktop-effects-tile-transition='easeInQuad'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 24, "center": 24, "right": 24}, {"left": 24, "center": 24, "right": 24, "panelId": 3}]'
+desktop-effects-maximize-time=100
 desktop-effects-maximize-effect='none'
-enabled-applets=['panel1:left:0:menu@cinnamon.org:36', 'panel1:left:1:show-desktop@cinnamon.org:37', 'panel1:left:2:panel-launchers@cinnamon.org:38', 'panel1:left:3:window-list@cinnamon.org:39', 'panel1:right:4:systray@cinnamon.org:40', 'panel1:right:5:keyboard@cinnamon.org:41', 'panel1:right:6:notifications@cinnamon.org:42', 'panel1:right:7:removable-drives@cinnamon.org:43', 'panel1:right:8:user@cinnamon.org:44', 'panel1:right:9:network@cinnamon.org:45', 'panel1:right:10:sound@cinnamon.org:46', 'panel1:right:11:power@cinnamon.org:47', 'panel1:right:12:calendar@cinnamon.org:48', 'panel1:right:3:github-projects@morgan-design.com:49', 'panel1:right:2:placesCenter@scollins:50', 'panel1:right:1:vpnLookOut@claudiux:51', 'panel1:right:0:workspace-switcher@cinnamon.org:52']
+enabled-applets=['panel1:left:0:menu@cinnamon.org:36', 'panel1:left:2:show-desktop@cinnamon.org:37', 'panel1:left:3:panel-launchers@cinnamon.org:38', 'panel1:right:10:systray@cinnamon.org:40', 'panel1:right:12:keyboard@cinnamon.org:41', 'panel1:right:15:notifications@cinnamon.org:42', 'panel1:right:16:removable-drives@cinnamon.org:43', 'panel1:right:17:user@cinnamon.org:44', 'panel1:right:18:network@cinnamon.org:45', 'panel1:right:20:sound@cinnamon.org:46', 'panel1:right:21:power@cinnamon.org:47', 'panel1:right:22:calendar@cinnamon.org:48', 'panel1:right:9:github-projects@morgan-design.com:49', 'panel1:right:8:placesCenter@scollins:50', 'panel1:right:11:xapp-status@cinnamon.org:53', 'panel1:right:14:SpicesUpdate@claudiux:54', 'panel1:left:1:places-bookmarks@dmo60.de:56', 'panel3:right:3:workspace-switcher@cinnamon.org:57', 'panel3:left:0:places-with-terminal@mtwebster:63', 'panel1:right:13:weather@mockturtl:65', 'panel1:right:4:blueberry@cinnamon.org:68', 'panel1:center:0:search-box@mtwebster:69', 'panel1:right:2:gnote@brett-smith:70', 'panel1:right:1:force-quit@cinnamon.org:71', 'panel1:right:0:sysmonitor@orcus:72', 'panel3:right:4:trash@cinnamon.org:74', 'panel3:left:1:window-list@cinnamon.org:76']
 desktop-effects-minimize-time=160
-desktop-effects-minimize-transition='easeInQuad'
+alttab-switcher-delay=100
 desktop-effects-tile-effect='none'
 desktop-effects-close-transition='easeOutQuad'
 enabled-extensions=['DesktopCube@yare', 'transparent-panels@germanfr']
-workspace-osd-x=50
-workspace-osd-y=50
+desktop-effects-minimize-transition='easeInQuad'
+panel-edit-mode=false
+panels-show-delay=['1:0', '2:0', '3:0']
+desklet-cache-updated=1582985145
 desktop-effects-close-time=120
+next-desklet-id=3
+panels-hide-delay=['1:0', '2:0', '3:0']
+favorite-apps=['Terminator.desktop', 'xed.desktop', 'org.gnome.Calculator.desktop', 'zenmap-root.desktop', 'gnome-nettool.desktop', 'org.gnome.DiskUtility.desktop', 'cinnamon-settings.desktop', 'mintupdate.desktop']
+show-media-keys-osd='small'
+workspace-osd-y=50
 desktop-effects-tile-time=100
+panels-autohide=['1:false', '2:intel', '3:false']
+workspace-osd-x=50
+no-adjacent-panel-barriers=false
+workspace-expo-view-as-grid=false
 
-[settings-daemon/plugins/xsettings]
-buttons-have-icons=true
-
-[settings-daemon/peripherals/keyboard]
-numlock-state='on'
+[sounds]
+tile-enabled=false
+switch-enabled=false
 
 [muffin]
+tile-maximize=true
+resize-threshold=24
+tile-hud-threshold=25
 unredirect-fullscreen-windows=false
+workspace-cycle=true
+
+[desktop/interface]
+cursor-size=36
+first-day-of-week=0
+clock-use-24h=false
+clock-show-seconds=true
+cursor-blink-time=1200
+icon-theme='Mint-X-Purple'
+gtk-theme='Mint-Y-Dark-Purple'
+clock-show-date=true
+keyboard-layout-prefer-variant-names=true
+
+[desktop/notifications]
+remove-old=true
 
 [desktop/media-handling]
 autorun-x-content-start-app=['x-content/unix-software']
 autorun-x-content-ignore=@as []
 autorun-x-content-open-folder=@as []
 
+[desktop/screensaver]
+ask-for-away-message=false
+lock-enabled=true
+
+[desktop/wm/preferences]
+min-window-opacity=30
+button-layout='menu:minimize,maximize,close'
+theme='Mint-Y-Dark'
+num-workspaces=5
+workspace-names=['Main Window', 'Web Browsing', 'DevOps', 'Work & Play', 'Remote Access']
+
+[desktop/a11y/keyboard]
+mousekeys-init-delay=300
+mousekeys-max-speed=10
+mousekeys-accel-time=300
+bouncekeys-delay=300
+slowkeys-delay=300
+
+[desktop/a11y/mouse]
+secondary-click-time=1.2
+dwell-time=1.2
+dwell-threshold=10
+
+[desktop/sound]
+event-sounds=false
+
 [desktop/background]
-picture-uri='file:///usr/share/backgrounds/linuxmint-tara/evablue_jacques_cartier.jpg'
+picture-uri='file:///home/woodfolk/Pictures/MaunaKeaPan_black_5000.jpg'
 picture-options='zoom'
 
 [desktop/background/slideshow]
 image-source='directory:///home/woodfolk/Pictures'
 delay=15
-
-[desktop/interface]
-clock-show-date=true
-icon-theme='Mint-X-Purple'
-clock-show-seconds=true
-clock-use-24h=false
-gtk-theme='Mint-Y-Dark-Purple'
-
-[desktop/sound]
-event-sounds=false
-
-[desktop/wm/preferences]
-theme='Mint-Y-Dark'
+slideshow-enabled=false
 
 [theme]
-symbolic-relative-size=0.67000000000000004
-theme-cache-updated=1547555958
+symbolic-relative-size=0.56999999999999995
+theme-cache-updated=1583318031
 name='Mint-Y-Dark-Purple'
+
+[settings-daemon/plugins/power]
+button-power='interactive'
+sleep-inactive-battery-timeout=0
+lock-on-suspend=true
+lid-close-ac-action='suspend'
+lid-close-battery-action='suspend'
+sleep-display-battery=1800
+sleep-display-ac=1800
+sleep-inactive-ac-timeout=0
+
+[settings-daemon/plugins/xsettings]
+buttons-have-icons=true
+
+[settings-daemon/peripherals/touchpad]
+motion-threshold=1
+disable-with-external-mouse=true
+clickpad-click=2
+touchpad-enabled=true
+
+[settings-daemon/peripherals/wacom/c70fd68f940f44f894c4a2b37f966ded-usb:172f:0034/0xfffff]
+buttonmapping=[1, 2, 3, 0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+pressurecurve=[0, 0, 100, 100]
+
+[settings-daemon/peripherals/wacom/c70fd68f940f44f894c4a2b37f966ded-usb:172f:0034]
+area=[-1, -1, -1, -1]
+is-absolute=true
+
+[settings-daemon/peripherals/keyboard]
+repeat-interval=uint32 30
+delay=uint32 500
+numlock-state='on'
+
+[settings-daemon/peripherals/mouse]
+drag-threshold=8
+motion-threshold=1
+double-click=400
+locate-pointer=true
 
 [cinnamon-session]
 quit-time-delay=60
