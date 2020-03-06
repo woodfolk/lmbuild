@@ -24,7 +24,7 @@ dpkg -l | grep -qw dkms || sudo apt-get install -y dkms              # dkms
 dpkg -l | grep -qw build-essential ||
          sudo apt-get install -y build-essential                     # build-essential
 dpkg -l | grep -qw systemd-coredump ||
-         sudo apt-get install systemd-coredump                       # systemd-coredump
+         sudo apt-get install -y systemd-coredump                    # systemd-coredump
 dpkg -l | grep -qw software-properties-common ||
          sudo apt-get install -y software-properties-common          # software-properties-common package
 dpkg -l | grep -qw arj || sudo apt-get install -y arj                # arj
@@ -89,7 +89,7 @@ echo -e "::Accessories::"
 echo -e "-------------------------------------------------------------------------"
 dpkg -l | grep -qw clamav || sudo apt-get install -y clamav          # ClamAV/ClamTK
 dpkg -l | grep -qw convertall || sudo apt-get install -y convertall  # ConvertAll
-dpkg -l | grep -gip || sudo apt-get install -y gip                   # Gip IP Addresss Calculator
+dpkg -l | grep -qw gip || sudo apt-get install -y gip                # Gip IP Addresss Calculator
 dpkg -l | grep -qw gpa || sudo apt-get install -y gpa                # GPA
 dpkg -l | grep -qw keepassxc || sudo apt-get install -y keepassxc    # KeePassXC
 dpkg -l | grep -qw multisystem ||
@@ -163,7 +163,7 @@ dpkg -l | grep -qw scribus-template ||
          sudo apt-get install -y scribus-template                    # scribus-template
 dpkg -l | grep -qw shotwell || sudo apt-get install -y shotwell      # Shotwell
 dpkg -l | grep -qw sweethome3d ||
-			sudo apt-get install -y sweethome3d                      # Sweet Home 3D
+			sudo apt-get install -y sweethome3d                         # Sweet Home 3D
 
 echo -e "-------------------------------------------------------------------------"
 echo -e "::Internet::"
