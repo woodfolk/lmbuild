@@ -5,7 +5,7 @@ set -e
 # Name:			addapps.sh
 # Author:		Romano Woodfolk
 # Created:		February 16, 2020
-# Modified:		March 02, 2020 (110100100)
+# Modified:		March 06, 2020 (110100100)
 # Version:		1.0.0
 # Website: 		http://www.romanowoodfolk.com
 #---------------------------------------------------------------------------------#
